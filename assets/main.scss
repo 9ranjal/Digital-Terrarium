@@ -225,6 +225,17 @@ hr {
   margin-top: 0;
 }
 
+/* Level 1: main section labels (Recent, Topics, Categories, Tableau, All) */
+.home .post-section > .section-label,
+.home .post-section > a.section-label-link:first-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: rgba($fg, 0.82);
+  margin: 0 0 6px 0;
+  text-transform: small-caps;
+}
+
 .home .section-label {
   font-size: 1.15rem;
   font-weight: 600;
@@ -235,24 +246,30 @@ hr {
 }
 
 .home .section-explainer {
-  font-size: 0.9rem;
-  color: rgba($fg, 0.45);
-  margin: 0 0 14px 0;
+  font-size: 0.88rem;
+  color: rgba($fg, 0.42);
+  margin: 0 0 12px 0;
   line-height: 1.4;
   font-weight: 400;
   text-transform: none;
 }
 
 .home .categories-section .category-block {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 }
 
 .home .categories-section .category-block:first-of-type {
   margin-top: 0;
 }
 
+/* Level 2: category sub-headings (Projects, Writing, Training, Mountains) */
 .home .categories-section .category-heading {
-  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba($fg, 0.62);
+  letter-spacing: -0.01em;
+  text-transform: none;
+  margin-bottom: 8px;
   display: block;
 }
 
@@ -353,12 +370,12 @@ hr {
 
 .home .post-meta {
   margin: 0;
-  color: rgba($fg, 0.45);
-  font-size: 0.95rem;
+  color: rgba($fg, 0.42);
+  font-size: 0.9rem;
 }
 
 .home .post-link {
-  color: rgba($fg, 0.88);
+  color: rgba($fg, 0.9);
   font-size: 1.05rem;
   font-weight: 400;
 }
