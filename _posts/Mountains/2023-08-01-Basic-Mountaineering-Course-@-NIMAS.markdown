@@ -21,7 +21,7 @@ Tomorrow, I make my way to NIMAS.
 
 *‘Girl in White’ en route to NIMAS*
 
-![Girl in White en route to NIMAS](/assets/images/mountains/nimas/Girl-in-White.jpg)
+![Girl in White en route to NIMAS]({{ site.url }}/assets/images/mountains/nimas/Girl-in-White.jpg)
 
 ## Day 1
 
@@ -29,7 +29,7 @@ We reached NIMAS today.
 
 *Panorama at the NIMAS gate*
 
-![View of Dirang from NIMAS](/assets/images/mountains/nimas/View-of-Dirang-from-NIMAS.jpg)
+![View of Dirang from NIMAS]({{ site.url }}/assets/images/mountains/nimas/View-of-Dirang-from-NIMAS.jpg)
 
 The institute is perched on top of a hill, some ways ahead from Dirang’s town centre. The drive from Guwahati to Dirang took close to 12 hours. The road leading out of Guwahati through Mangaldai and Udalgiri is narrow and snakes through paddy fields dotted by scattered settlements before we break into Arunachal via Bhalukpong and Bomdila.
 
@@ -37,7 +37,7 @@ The vistas change dramatically as the eastern Himalayas make themselves visible 
 
 *View of Dirang town from NIMAS*
 
-![View of Dirang from NIMAS](/assets/images/mountains/nimas/View-of-Dirang-from-NIMAS.jpg)
+![View of Dirang from NIMAS]({{ site.url }}/assets/images/mountains/nimas/View-of-Dirang-from-NIMAS.jpg)
 
 We received basic instructions for tomorrow and are to fall in by 5:50am.
 
@@ -47,7 +47,7 @@ We began the day by falling in at 6 am, lining up in columns of five. We took a 
 
 *Parade down NIMAS hill*
 
-![Parade down NIMAS hill](/assets/images/mountains/nimas/Parade-down-NIMAS-hill.jpg)
+![Parade down NIMAS hill]({{ site.url }}/assets/images/mountains/nimas/Parade-down-NIMAS-hill.jpg)
 
 What followed is the most brutal training session that I’ve endured thus far. I wasn’t acclimated - NIMAS sits at ~1560m - as the lingering headache from y’day presaged. Within no time, I was out of breath and gasping for air as we were made to carry out hill sprints followed by push-up variations ad infinitum.
 
@@ -57,7 +57,7 @@ We were later issued our equipment (rucksack, climbing harness, helmet, rope sli
 
 *Climbing Gear and Equipment*
 
-![Climbing Gear](/assets/images/mountains/nimas/Climbing-Gear.jpg)
+![Climbing Gear]({{ site.url }}/assets/images/mountains/nimas/Climbing-Gear.jpg)
 
 ## Day 3
 
@@ -67,7 +67,7 @@ We began the day with a hike/run to Dirang monastery. Running downhill was easie
 
 *Entrance to Dirang Monastery*
 
-![En Route to Dirang Monastery](/assets/images/mountains/nimas/En-Route-to-Dirang-Monastery.jpg)
+![En Route to Dirang Monastery]({{ site.url }}/assets/images/mountains/nimas/En-Route-to-Dirang-Monastery.jpg)
 
 The rest of the day passed with classes on mountain terminology and maps.
 
@@ -77,7 +77,7 @@ We had a practise run for the 1 mile test (that’s to be taken at the end of th
 
 *NIMAS Climbing Wall*
 
-![NIMAS Climbing Wall](/assets/images/mountains/nimas/NIMAS-Climbing-Wall.jpg)
+![NIMAS Climbing Wall]({{ site.url }}/assets/images/mountains/nimas/NIMAS-Climbing-Wall.jpg)
 
 I managed to climb up to 70% of Route 4 before I looked down and found myself close to 30 feet from the ground. My body took this as a cue to hyperventilate, causing me to bail on the climb and belay down. I was disappointed as I knew I could’ve climbed further if not for the sudden disorientation brought upon by the height.
 
@@ -89,7 +89,7 @@ We began the day with a 7km 500mD+ hike to Helmet Top (a nearby hill). We didn�
 
 *Hills bounding NIMAS*
 
-![Hills bounding NIMAS](/assets/images/mountains/nimas/Hills-bounding-NIMAS.jpg)
+![Hills bounding NIMAS]({{ site.url }}/assets/images/mountains/nimas/Hills-bounding-NIMAS.jpg)
 
 The morning wall climbing session was postponed to 2 pm due to the rains. I was apprehensive of how I’d feel being back on the wall but the fear seems to have subsided and there is now a greater trust in the rope and my self.
 
@@ -103,7 +103,7 @@ The hike entails descending NIMAS hill and making our way through Dirang while h
 
 *Descent from Jimithang*
 
-![Descent from Jimithang](/assets/images/mountains/nimas/Descent-from-Jimithang.jpg)
+![Descent from Jimithang]({{ site.url }}/assets/images/mountains/nimas/Descent-from-Jimithang.jpg)
 
 The long hours blended together as the rucksack dug into my shoulders and made seemed to imprint itself on my very bones themselves. The slight drizzle that had persisted for over an hour since our start finally gave way shortly before Jimithang and turned into a strong downpour that drenched me through my poncho and boots.
 
@@ -121,7 +121,7 @@ The mile run began disastrously as I inexplicably felt a sharp pain in my right 
 
 *Climbing test at the NIMAS wall*
 
-![Climbing test at the NIMAS wall](/assets/images/mountains/nimas/Climbing-test-at-the-NIMS-wall.jpg)
+![Climbing test at the NIMAS wall]({{ site.url }}/assets/images/mountains/nimas/Climbing-test-at-the-NIMS-wall.jpg)
 
 A short break later, we headed to the sport wall where we were allotted routes at random, I was to repeat the route that I’d failed while climbing on the first day at the wall. I made it up till 70% of the route before my arms were too pumped to reach the next hold. We were made to descend after two minutes and I was disappointed to not have climbed higher, but also happy that my nerves had dissipated while on the wall.
 
@@ -129,7 +129,7 @@ Tomorrow is a 20k 1000D+ hike as we move to our next staging post at New Melling
 
 *En route to New Melling*
 
-![En route to New Melling](/assets/images/mountains/nimas/En-Route-to-New-Melling.jpg)
+![En route to New Melling]({{ site.url }}/assets/images/mountains/nimas/En-Route-to-New-Melling.jpg)
 
 ## Day 8
 
@@ -137,7 +137,7 @@ I sat and listened to the river at New Melling: at first, it appeared a single s
 
 *River at New Melling.*
 
-![River at New Melling](/assets/images/mountains/nimas/River-at-New-Melling.jpg)
+![River at New Melling]({{ site.url }}/assets/images/mountains/nimas/River-at-New-Melling.jpg)
 
 We shifted base from the NIMAS campus to New Melling. We took a sumo from NIMAS to Jung via Sela Pass. There was a mild sense of trepidation as we got off at Jung and started on the hike to New Melling with all traces of civilisation melting behind our backs. Any worries that existed were soon discarded as the route to New Melling is stunning with a river ever-present; opposite the river are sheer rock faces that undulate and morph into innumerable forms. I was able to forget the 20kg rucksack that I was carrying for the most part as each leaf in the valley moved with the wind and came together with the gush of the river to sing a symphony that I’ll never truly understand.
 
@@ -145,7 +145,7 @@ We have camped at a site right next to the river at New Melling: home for the ne
 
 *New Melling river at Night*
 
-![New Melling River at Night](/assets/images/mountains/nimas/New-Melling-River-at-Night.jpg)
+![New Melling River at Night]({{ site.url }}/assets/images/mountains/nimas/New-Melling-River-at-Night.jpg)
 
 ## Day 9
 
@@ -159,7 +159,7 @@ We were split into groups to try the four routes bolted for this season at New M
 
 *Climbing routes (6, 7, 8, 9) at New Melling for BMC-42*
 
-![Climbing Routes at New Melling](/assets/images/mountains/nimas/Climbing-Routes-at-New-Melling.jpg)
+![Climbing Routes at New Melling]({{ site.url }}/assets/images/mountains/nimas/Climbing-Routes-at-New-Melling.jpg)
 
 I tried my hand at jumaring and rappelling; the latter went smoothly but jumaring was an unmitigated disaster as my jumar got stuck at the piton close to 40 feet from ground and I needed an instructor’s help to extricate myself. It was good to learn something new nonetheless.
 
@@ -175,7 +175,7 @@ A solitary road is wedded to the riverbank and snakes its way through the valley
 
 *Cliffs bounding New Melling*
 
-![Cliffs bounding New Melling](/assets/images/mountains/nimas/Cliffs-bounding-New-Melling.jpg)
+![Cliffs bounding New Melling]({{ site.url }}/assets/images/mountains/nimas/Cliffs-bounding-New-Melling.jpg)
 
 I was told today that in Carnatic music, the same theme/melody plays out in different ways, being expressed in different forms and assuming varied manners. I’ve been doing the same thing now day on day: a morning PT session, climbing practice, followed by lessons on knots, hitches, and base building.
 
@@ -187,7 +187,7 @@ A relatively relaxed day today, with a 15k 1000mD+ hike to Thimbu. Found the las
 
 *En route to Thimbu*
 
-![En route to Thimbu](/assets/images/mountains/nimas/En-route-to-Thimbu.jpg)
+![En route to Thimbu]({{ site.url }}/assets/images/mountains/nimas/En-route-to-Thimbu.jpg)
 
 A few people have been leaving the course — some for health, others for personal reasons/family emergencies. It’s a strange existence we inhabit here — uniquely tribalistic in the way only a difficult shared experience can create bonds and bonhomie, yet also very individualistic like crabs in a bucket living under the illusion of a non-zero sum game.
 
@@ -205,7 +205,7 @@ I have torn cuticles and shredded fingers but today these represent hard-fought 
 
 *Rock Climbing test at New Melling*
 
-![Rock Climbing Test at New Melling](/assets/images/mountains/nimas/Rock-Climbing-Test-at-New-Melling.jpg)
+![Rock Climbing Test at New Melling]({{ site.url }}/assets/images/mountains/nimas/Rock-Climbing-Test-at-New-Melling.jpg)
 
 Tomorrow, we walk to Jung for a brief link-up with civilisation before heading to Mago day after.
 
@@ -221,13 +221,13 @@ Today, we completed the 20K 1000D+ trek from New Melling to our next staging poi
 
 *En route to Mago*
 
-![En route to Mago](/assets/images/mountains/nimas/En-route-to-Mago.jpg)
+![En route to Mago]({{ site.url }}/assets/images/mountains/nimas/En-route-to-Mago.jpg)
 
 If there’s a purgatory, I imagine it’d be similar to the vista that we traversed today. Mile upon mile of quarry road, stretching endlessly as far as the eye can see. Fine dust and silica coating our tongues and teeth. An endless slog up to the heavens through a hellish, barren landscape deserted by life and vegetation. A contrast between nature’s benevolence on the distant hills and man’s ambition.
 
 *Terrain en route to Mago*
 
-![Terrain en route to Mago](/assets/images/mountains/nimas/Terrain-en-Route-to-Mago.jpg)
+![Terrain en route to Mago]({{ site.url }}/assets/images/mountains/nimas/Terrain-en-Route-to-Mago.jpg)
 
 ## Day 16
 
@@ -235,7 +235,7 @@ We moved from Mago to Jithang today. The trek was relatively short at 12k and my
 
 *Jithang Valley*
 
-![Jithang Valley](/assets/images/mountains/nimas/Jithang-Valley.jpg)
+![Jithang Valley]({{ site.url }}/assets/images/mountains/nimas/Jithang-Valley.jpg)
 
 Jithang is located amidst a valley flanked my mountain ranges on parallel sides and steep hills on the lateral ends. There are a few nomadic settlements here inhabited by yak shepherds. The landscape is stark and brutalist. The instructors kept us busy once we reached the campsite, having us collect firewood and water to help us get better acclimated. We have been blessed with good weather and I hope to bask in the sun before our survival test tomorrow.
 
@@ -245,7 +245,7 @@ Today began on a tough note as the instructors were displeased with our discipli
 
 *View of Jithang from a nearby hill*
 
-![View of Jithang](/assets/images/mountains/nimas/View-of-Jithang.jpg)
+![View of Jithang]({{ site.url }}/assets/images/mountains/nimas/View-of-Jithang.jpg)
 
 We were made to cross one of the river streams bounding Jithang and given limited rations to survive the day and night by ourselves. We benefitted from the presence of an army gentleman in our group as he managed to construct our shelter pretty much singlehandedly. We had less success with the khichdi we made and managed to scarf down some undercooked rice to stave off hunger after having spent the entire morning collecting wood and placing stones for the shelter.
 
@@ -255,13 +255,13 @@ Moved to Meerathang — 8k 700D+. The final chapter.
 
 *First view of Gorichen Peak (~6858m)*
 
-![First view of Gorichen Peak](/assets/images/mountains/nimas/First-view-of-Gorichen-Peak.jpg)
+![First view of Gorichen Peak]({{ site.url }}/assets/images/mountains/nimas/First-view-of-Gorichen-Peak.jpg)
 
 ## Day 19
 
 *Camp at Meerathang in the backdrop of the Gorichen massif*
 
-![Camp at Meerathang](/assets/images/mountains/nimas/Camp-at-Meerathang.jpg)
+![Camp at Meerathang]({{ site.url }}/assets/images/mountains/nimas/Camp-at-Meerathang.jpg)
 
 Mago and New Melling seem far in the past now. We’re almost a week removed from NM, and someday, the same shall be true of Meerathang some day.
 
@@ -269,7 +269,7 @@ We visisted Rani Tal today - a tarn that lies halfway to Meerathang Glacier - wi
 
 *Rani Tal*
 
-![Rani Tal](/assets/images/mountains/nimas/Rani-Tal.jpg)
+![Rani Tal]({{ site.url }}/assets/images/mountains/nimas/Rani-Tal.jpg)
 
 A few random thoughts that have occurred to me over the past few days:
 
@@ -284,7 +284,7 @@ You come to savour the smallest things here. My shoes are inside the tent and pr
 
 *Gorichen Group*
 
-![Gorichen Group](/assets/images/mountains/nimas/Gorichen-Group.jpg)
+![Gorichen Group]({{ site.url }}/assets/images/mountains/nimas/Gorichen-Group.jpg)
 
 ## Day 21
 
@@ -292,13 +292,13 @@ We enter our final week, the bulk of which will be spent surviving Meerathang. Y
 
 *En route to Meerathang Glacier*
 
-![En route to Meerathang Glacier](/assets/images/mountains/nimas/En-Route-to-Meerathan-Glacier.jpg)
+![En route to Meerathang Glacier]({{ site.url }}/assets/images/mountains/nimas/En-Route-to-Meerathan-Glacier.jpg)
 
 Upon reaching, we were allowed no time to rest as we had to train before the weather turned. We were made to wear our scarpa snow boots and crampons which was a torturous affair with my numb fingers; by the time I was done with everything, I was wet down to my bones. We were taught four different ice climbing techniques and then had trials which compounded my exhaustion exponentially. I belayed three people and was the last person who got to climb the ice eall, and the last person to head back down from the glacier.
 
 *Meerathang Glacier*
 
-![Meerathang Glacier](/assets/images/mountains/nimas/Meerathang-Glacier.jpg)
+![Meerathang Glacier]({{ site.url }}/assets/images/mountains/nimas/Meerathang-Glacier.jpg)
 
 While leaving, the instructor stopped us and made us listen to see if we could discern a slab avalanche in the distance — this is a level of mastery for which I can only aspire. The route back was treacherous with car-sized boulders hurling themselves in our direction sporadically, and identified by calls of ‘pathar, pathar’.
 
@@ -314,7 +314,7 @@ Tomorrow, I go again.
 
 *Gorichen Group*
 
-![Gorichen Group](/assets/images/mountains/nimas/Gorichen-Group.jpg)
+![Gorichen Group]({{ site.url }}/assets/images/mountains/nimas/Gorichen-Group.jpg)
 
 ## Day 23
 
@@ -322,7 +322,7 @@ Success, so to speak. My focus on hydrating y’day paid off and I felt very str
 
 *Ice climbing test*
 
-![Ice climbing test](/assets/images/mountains/nimas/Ice-Climbing-Test.jpg)
+![Ice climbing test]({{ site.url }}/assets/images/mountains/nimas/Ice-Climbing-Test.jpg)
 
 The glacier was breath-taking in its beauty today after having cast off the veil of fog it’d previously won.
 
@@ -334,7 +334,7 @@ Trekked back from Meerathang to Mago today. I continued my streak of falling, an
 
 *En route to Mago.*
 
-![En route to Mago](/assets/images/mountains/nimas/En-route-to-Mago.jpg)
+![En route to Mago]({{ site.url }}/assets/images/mountains/nimas/En-route-to-Mago.jpg)
 
 We are staying at the barracks in Mago: seventy of us sequestered reasonably comfortably into a single hall. I relish the prospect of being protected against the elements by stone and timber.
 
@@ -346,7 +346,7 @@ A drizzle sustained itself throughout our walk. I don’t recall what it’s lik
 
 *Welcoming Party at New Melling*
 
-![Welcome Party at New Melling](/assets/images/mountains/nimas/Welcome-Party-at-New-Melling.jpg)
+![Welcome Party at New Melling]({{ site.url }}/assets/images/mountains/nimas/Welcome-Party-at-New-Melling.jpg)
 
 ## Day 26
 
@@ -358,7 +358,7 @@ I idled the day away and spent time speaking with the lady proprietor at the kir
 
 ## FIN
 
-![Fin](/assets/images/mountains/nimas/Fin.jpg)
+![Fin]({{ site.url }}/assets/images/mountains/nimas/Fin.jpg)
 
 PS: I did not maintain a journal for my last two days at NIMAS (which entailed getting back to campus, writing the theory test - that I thankfully passed - and our graduation ceremony).
 
