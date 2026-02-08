@@ -1,8 +1,9 @@
 title: Pranjal Singh
 email: 9ranjal@gmail.com
 description: "Digital Terrarium."
+# For GitHub Pages with custom domain (pranjal-singh.com)
 baseurl: ""
-url: ""
+url: "https://pranjal-singh.com"
 
 theme: minima
 
@@ -15,7 +16,6 @@ bsky_url: "https://bsky.app/profile/9ranjal.bsky.social"
 
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
 
 # ✅ Only show About in header nav (no Topics, no tag pages)
 header_pages:
