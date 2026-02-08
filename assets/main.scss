@@ -234,6 +234,19 @@ hr {
   text-transform: none;
 }
 
+.home .tableau-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1.5rem;
+  margin: 0;
+  width: 100%;
+}
+
+.home .tableau-links .post-link {
+  margin: 0;
+}
+
 .home .latest-title {
   font-size: 1.55rem;
   font-weight: 500;

@@ -124,34 +124,14 @@ layout: default
   </section>
   {% endif %}
 
-  <!-- Music -->
-  <section class="post-section" id="music">
-    <div class="section-label">Music</div>
-    <ul class="post-list">
-      <li>
-        <a class="post-link" href="{{ '/music/' | relative_url }}">Overview</a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Books -->
-  <section class="post-section" id="books">
-    <div class="section-label">Books</div>
-    <ul class="post-list">
-      <li>
-        <a class="post-link" href="{{ '/books/' | relative_url }}">Overview</a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Movies -->
-  <section class="post-section" id="movies">
-    <div class="section-label">Movies</div>
-    <ul class="post-list">
-      <li>
-        <a class="post-link" href="{{ '/movies/' | relative_url }}">Overview</a>
-      </li>
-    </ul>
+  <!-- Tableau: Books, Music, Movies -->
+  <section class="post-section tableau-section" id="tableau">
+    <div class="section-label">Tableau</div>
+    <div class="tableau-links">
+      <a class="post-link" href="{{ '/books/' | relative_url }}">Books</a>
+      <a class="post-link" href="{{ '/music/' | relative_url }}">Music</a>
+      <a class="post-link" href="{{ '/movies/' | relative_url }}">Movies</a>
+    </div>
   </section>
 
   <hr />
