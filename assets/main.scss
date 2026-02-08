@@ -1,7 +1,7 @@
 ---
 ---
 
-@use "sass:math";
+// No @use needed — GitHub Pages uses older Sass
 
 /*
   Flexoki-inspired dark theme (Steph Ango-style)
@@ -84,8 +84,8 @@ body {
 
 @media screen and (max-width: $on-laptop) {
   .wrapper {
-    padding-right: math.div($spacing-unit, 2);
-    padding-left: math.div($spacing-unit, 2);
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
   }
 }
 
@@ -189,7 +189,7 @@ code {
 }
 
 pre {
-  padding: math.div($spacing-unit, 2);
+  padding: $spacing-unit / 2;
 }
 
 code {
@@ -199,7 +199,7 @@ code {
 
 blockquote {
   border-left: 2px solid $line;
-  padding-left: math.div($spacing-unit, 2);
+  padding-left: $spacing-unit / 2;
   color: rgba($fg, 0.65);
 }
 
