@@ -1,0 +1,47 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="wrapper">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-name">© {{ site.time | date: "%Y" }} {{ site.title | default: site.author.name | default: "Pranjal Singh" | escape }}</span>
+      </div>
+  
+      <div class="footer-right">
+        {%- if site.github_username -%}
+          <a class="footer-link" href="https://github.com/{{ site.github_username | escape }}" target="_blank" rel="noopener">
+            <span class="social-icon">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
+              </svg>
+            </span>
+            <span class="social-text">GitHub</span>
+          </a>
+          {%- if site.linkedin_username or site.bsky_url -%}
+            <span class="social-sep">·</span>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+          <a class="footer-link" href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}/" target="_blank" rel="noopener">
+            <span class="social-icon">
+              <svg class="svg-icon" aria-hidden="true">
+                <use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use>
+              </svg>
+            </span>
+            <span class="social-text">LinkedIn</span>
+          </a>
+          {%- if site.bsky_url -%}
+            <span class="social-sep">·</span>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if site.bsky_url -%}
+          <a class="footer-link" href="{{ site.bsky_url | escape }}" target="_blank" rel="me noopener">
+            <span class="social-icon">
+              {% include social-icons/bsky.svg %}
+            </span>
+            <span class="social-text">Bluesky</span>
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</footer>
+  

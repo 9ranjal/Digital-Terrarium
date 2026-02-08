@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Aanae"
+date: 2025-08-26
+tags: [AI, RAG, Aanae]
+categories: projects
+---
+
+
+[Aanae](https://www.aanae.com/) is a best-in-class chatbot for UPSC/PSC preparation, powered by a custom-built pipeline that combines structure-aware chunking, semantic enrichment, and retrieval-augmented generation (RAG) to deliver grounded, context-aware answers.
+
+*Aanae* means **“elephant”** in Kannada. The symbolism is intentional: an elephant’s memory and brain. Aanae is meant to function as a **second brain**—a system that remembers, retrieves, and helps reason over what you’ve already learned.
+
+Here are the posts related to this project:
+
+- [Why I Built Aanae?](/2025/09/01/Why-I-Built-Aanae.html)
+- [Preparing your Data](/2025/09/01/Preparing-your-Data.html)
+- [Chunking](/2025/09/08/Chunking.html)
+- [Enrichment](/2025/09/15/Enrichment.html)
+- [Retrieval](/2025/09/22/Retrieval.html)
+- [LLM Architecture](/2025/09/29/LLM-Architecture.html)

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {%- assign requested_category = page.category | default: page.title -%}
+  {%- assign requested_slug = requested_category | slugify -%}
+
+  {%- comment -%}
+    Categories are stored on posts as an array `post.categories`.
+    We match by slug so "Creative Writing" and "creative-writing" work too.
+  {%- endcomment -%}
+  {%- assign category_posts = "" | split: "," -%}
+  {%- for post in site.posts -%}
+    {%- assign matched = false -%}
+    {%- for c in post.categories -%}
+      {%- if c -%}
+        {%- assign c_slug = c | slugify -%}
+        {%- if c_slug == requested_slug -%}
+          {%- assign matched = true -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if matched -%}
+      {%- assign category_posts = category_posts | push: post -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign category_posts = category_posts | sort: "date" | reverse -%}
+
+  {% if category_posts and category_posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in category_posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts found in the "{{ requested_category }}" category.</p>
+  {% endif %}
+</div>
+

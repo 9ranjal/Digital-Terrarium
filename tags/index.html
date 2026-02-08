@@ -1,0 +1,26 @@
+---
+layout: default
+title: Topics
+---
+
+<div class="page">
+  <h1>Topics</h1>
+
+  {% assign sorted_tags = site.tags | sort %}
+  {% if sorted_tags.size > 0 %}
+    <ul class="tag-list">
+      {% for t in sorted_tags %}
+        {% assign tag_name = t[0] %}
+        {% assign count = t[1].size %}
+        <li>
+          <a href="{{ tag_name | slugify | prepend: '/tags/' | append: '/' | relative_url }}">
+            {{ tag_name }}
+          </a>
+          <span class="tag-count">({{ count }})</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No topics yet.</p>
+  {% endif %}
+</div>

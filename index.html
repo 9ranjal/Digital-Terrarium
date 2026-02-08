@@ -1,0 +1,190 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <!-- Recent (Merged Latest + Updated) -->
+  {% assign chronological_posts = site.posts | sort: "date" | reverse %}
+  {% assign latest_post = chronological_posts | first %}
+
+
+
+  <section class="post-section recent">
+    <div class="section-label">Recent</div>
+
+    <!-- 1. Chronological Latest -->
+    {% if latest_post %}
+    <div class="latest-featured">
+      <h3 class="latest-title">
+        <a class="latest-link" href="{{ latest_post.url | relative_url }}">
+          {{ latest_post.title | escape }}
+        </a>
+      </h3>
+
+      <div class="latest-meta">
+        {{ latest_post.date | date: "%B %-d, %Y" }}
+        {% if latest_post.read_time %} · {{ latest_post.read_time }}{% endif %}
+      </div>
+
+      {% if latest_post.excerpt %}
+      <p class="latest-excerpt">
+        {{ latest_post.excerpt | strip_html | truncate: 160 }}
+        <a class="latest-readmore" href="{{ latest_post.url | relative_url }}">Keep reading →</a>
+      </p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+
+  </section>
+
+  <hr />
+
+  <!-- Topics (tags): only tags that exist in posts -->
+  {% assign sorted_tags = site.tags | sort %}
+  {% if sorted_tags.size > 0 %}
+  <section class="post-section">
+    <div class="section-label">Topics</div>
+    <div class="topics">
+      {% for t in sorted_tags %}
+      {% assign tag_name = t[0] %}
+      <a href="{{ tag_name | slugify | prepend: '/tags/' | append: '/' | relative_url }}">{{ tag_name }}</a>{% unless
+      forloop.last %},{% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <hr />
+
+
+
+  <!-- Projects -->
+  {% assign project_posts = site.posts | where: "categories", "projects" %}
+  {% if project_posts.size > 0 %}
+  <section class="post-section" id="projects">
+    <div class="section-label">Projects</div>
+    <ul class="post-list">
+      {% for post in project_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Writing -->
+  {% assign writing_posts = site.posts | where: "categories", "writing" %}
+  {% if writing_posts.size > 0 %}
+  <section class="post-section" id="writing">
+    <div class="section-label">Writing</div>
+    <ul class="post-list">
+      {% for post in writing_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Training -->
+  {% assign training_posts = site.posts | where: "categories", "training" %}
+  {% if training_posts.size > 0 %}
+  <section class="post-section" id="training">
+    <div class="section-label">Training</div>
+    <ul class="post-list">
+      {% for post in training_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Mountains -->
+  {% assign mountains_posts = site.posts | where: "categories", "mountains" %}
+  {% if mountains_posts.size > 0 %}
+  <section class="post-section" id="mountains">
+    <div class="section-label">Mountains</div>
+    <ul class="post-list">
+      {% for post in mountains_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Music -->
+  {% assign music_posts = site.posts | where: "categories", "music" %}
+  {% if music_posts.size > 0 %}
+  <section class="post-section" id="music">
+    <div class="section-label">Music</div>
+    <ul class="post-list">
+      {% for post in music_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Books -->
+  {% assign books_posts = site.posts | where: "categories", "books" %}
+  {% if books_posts.size > 0 %}
+  <section class="post-section" id="books">
+    <div class="section-label">Books</div>
+    <ul class="post-list">
+      {% for post in books_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <!-- Movies -->
+  {% assign movies_posts = site.posts | where: "categories", "movies" %}
+  {% if movies_posts.size > 0 %}
+  <section class="post-section" id="movies">
+    <div class="section-label">Movies</div>
+    <ul class="post-list">
+      {% for post in movies_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <hr />
+
+  <!-- All Articles (newest to oldest) -->
+  <section class="post-section all-articles">
+    <div class="section-label">All</div>
+    <ul class="post-list">
+      {% for post in chronological_posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+</div>

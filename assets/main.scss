@@ -1,0 +1,447 @@
+---
+---
+
+@use "sass:math";
+
+/*
+  Flexoki-inspired dark theme (Steph Ango-style)
+  - Minimal typography
+  - Quiet section labels + clear dividers
+  - Dates aligned next to titles
+*/
+
+// Typography
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$base-font-size: 17px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.65 !default;
+
+$code-font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+// Flexoki (key tokens)
+$bg: #100F0F; // Flexoki black
+$fg: #E6E4D9; // base-100
+$muted: #6F6E69; // base-500
+$muted-2: #575653; // base-600
+$line: #282726; // base-900
+$line-2: #343331; // base-850
+$hover: #4385BE; // blue-400
+$hover-2: #3AA99F; // cyan-400
+
+// Minima variables
+$text-color: $fg !default;
+$background-color: $bg !default;
+$brand-color: $fg !default;
+$brand-color-light: $fg !default;
+$brand-color-dark: $muted !default;
+
+$grey-color: $muted !default;
+$grey-color-light: $line-2 !default;
+$grey-color-dark: $muted-2 !default;
+
+$code-background-color: #1A1918 !default;
+
+$spacing-unit: 30px !default;
+$content-width: 650px !default;
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+$table-text-align: left !default;
+
+@import "minima";
+
+/* -----------------------------
+   Global
+   ----------------------------- */
+
+/* Dark mode: override Minima defaults */
+html,
+body {
+  background: $bg !important;
+  color: $fg !important;
+}
+
+main.page-content,
+.page-content .wrapper {
+  background: $bg;
+  color: $fg;
+}
+
+body {
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Align header, main and footer to same content width and padding */
+.wrapper {
+  max-width: $content-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+}
+
+@media screen and (max-width: $on-laptop) {
+  .wrapper {
+    padding-right: math.div($spacing-unit, 2);
+    padding-left: math.div($spacing-unit, 2);
+  }
+}
+
+/* Links: underlined by default (Steph-like), color-shift on hover */
+a {
+  color: rgba($fg, 0.90);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.18s ease;
+}
+
+a:visited {
+  color: rgba($fg, 0.78);
+}
+
+a:hover {
+  color: $hover;
+}
+
+/* -----------------------------
+   Header
+   ----------------------------- */
+
+.site-header {
+  border: 0;
+  padding: 24px 0 12px;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-title {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: rgba($fg, 0.92);
+}
+
+.site-title:hover {
+  color: rgba($fg, 0.98);
+}
+
+.site-nav-simple {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-nav-simple .page-link {
+  color: rgba($fg, 0.62);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.site-nav-simple .page-link:hover {
+  color: rgba($fg, 0.90);
+}
+
+/* -----------------------------
+   Footer (condensed)
+   ----------------------------- */
+
+/* -----------------------------
+   Page / Post typography
+   ----------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba($fg, 0.94);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.post-title {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.post-meta {
+  color: rgba($fg, 0.48);
+  font-size: 0.95rem;
+}
+
+pre,
+code {
+  background: $code-background-color;
+  border: 0;
+  border-radius: 4px;
+}
+
+pre {
+  padding: math.div($spacing-unit, 2);
+}
+
+code {
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+blockquote {
+  border-left: 2px solid $line;
+  padding-left: math.div($spacing-unit, 2);
+  color: rgba($fg, 0.65);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba($fg, 0.14);
+  margin: 40px 0;
+}
+
+/* -----------------------------
+   Homepage blocks
+   ----------------------------- */
+
+.home {
+  padding-top: 0;
+}
+
+.home .post-section {
+  margin-bottom: 44px;
+}
+
+.home .post-section:first-child {
+  margin-top: 0;
+}
+
+.home .section-label {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: rgba($fg, 0.75);
+  margin: 0 0 14px 0;
+  text-transform: none;
+}
+
+.home .latest-title {
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px 0;
+  line-height: 1.25;
+}
+
+.home .latest-link {
+  text-decoration: none;
+  color: rgba($fg, 0.92);
+}
+
+.home .latest-link:hover {
+  color: $hover;
+}
+
+.home .latest-meta {
+  font-size: 0.95rem;
+  color: rgba($fg, 0.55);
+  margin: 0 0 12px 0;
+}
+
+.home .latest-excerpt {
+  color: rgba($fg, 0.60);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.home .latest-readmore {
+  text-decoration: none;
+  color: rgba($fg, 0.70);
+}
+
+.home .latest-readmore:hover {
+  color: $hover;
+}
+
+/* Topics / tags */
+.home .topics {
+  line-height: 1.9;
+  max-width: 62ch;
+  color: rgba($fg, 0.62);
+}
+
+.home .topics a {
+  color: rgba($fg, 0.72);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.home .topics a:hover {
+  color: $hover;
+}
+
+/* Post lists: date inline next to title */
+.home .post-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.home .post-list>li {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  column-gap: 24px;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.home .post-meta {
+  margin: 0;
+  color: rgba($fg, 0.45);
+  font-size: 0.95rem;
+}
+
+.home .post-link {
+  color: rgba($fg, 0.88);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.home .post-link:hover {
+  color: $hover;
+}
+
+/* Responsive: stack on narrow screens */
+@media (max-width: 560px) {
+  .home .post-list>li {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+}
+
+/* -----------------------------
+   Tag pages: same layout as homepage
+   ----------------------------- */
+
+.page .post-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.page .post-list>li {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  column-gap: 24px;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.page .post-meta {
+  margin: 0;
+  color: rgba($fg, 0.45);
+  font-size: 0.95rem;
+}
+
+.page .post-link {
+  color: rgba($fg, 0.88);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.page .post-link:hover {
+  color: $hover;
+}
+
+@media (max-width: 560px) {
+  .page .post-list>li {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+}
+
+/* -----------------------------
+   Footer (condensed, icon + text)
+   ----------------------------- */
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba($fg, 0.10);
+  font-size: 0.95rem;
+}
+
+.site-footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.site-footer .footer-name {
+  color: rgba($fg, 0.55);
+}
+
+.site-footer .footer-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.site-footer .social-sep {
+  color: rgba($fg, 0.35);
+  margin: 0 0.15rem;
+}
+
+.site-footer .footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: rgba($fg, 0.55);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  overflow: visible;
+}
+
+.site-footer .footer-link:hover,
+.site-footer .footer-link:focus-visible {
+  color: rgba($fg, 0.90);
+  outline: none;
+}
+
+.site-footer .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  line-height: 0;
+  flex: 0 0 18px;
+  color: currentColor;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.site-footer .social-icon svg {
+  width: 16px;
+  height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  display: block;
+  fill: currentColor;
+  overflow: visible;
+  flex-shrink: 0;
+}

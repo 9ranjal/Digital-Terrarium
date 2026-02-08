@@ -1,0 +1,16 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <div class="site-header-inner">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        {{ site.title | default: site.author.name | default: "Pranjal Singh" | escape }}
+      </a>
+
+      <nav class="site-nav-simple" aria-label="Primary">
+        {%- assign about_page = site.pages | where_exp: "p", "p.title == 'About'" | first -%}
+        {%- if about_page -%}
+          <a class="page-link" href="{{ about_page.url | relative_url }}">About</a>
+        {%- endif -%}
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Race Log"
+date: 2026-01-01
+tags: [cycling, running, races]
+categories: training
+---
+
+Update this annually for a record of my races. 
+
+The goal is to be intentional about logging race reports. Please see: [MC Cycling's blog](https://mccyclingdiary.blogspot.com/) - an excellent compendium from one of BLR's best ultracyclists.
+
+## 2026
+- Mumbai Marathon
+
+## 2025
+- Kodagu Half Marathon
+- Mysore Half Marathon
+- Bangalore Ultra 37.5K
+
+## 2024
+- Kodagu Half Marathon
+
+## 2023
+- Nandi Hills 200K (Cycling)
+- Mysore Half Marathon
+- Kodagu Half Marathon
+- Mangalore Full Marathon
+- Kaveri Trail 10K
+- Jaisalmer 50K
+
+## 2022
+- CR Patna 300K (Cycling)
+- Melukote 200K (Cycling) – DNF

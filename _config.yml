@@ -1,0 +1,22 @@
+title: Pranjal Singh
+email: 9ranjal@gmail.com
+description: "Digital Terrarium."
+baseurl: ""
+url: ""
+
+theme: minima
+
+minima:
+  skin: dark
+
+github_username: 9ranjal
+linkedin_username: 9ranjal
+bsky_url: "https://bsky.app/profile/9ranjal.bsky.social"
+
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# ✅ Only show About in header nav (no Topics, no tag pages)
+header_pages:
+  - about.markdown
