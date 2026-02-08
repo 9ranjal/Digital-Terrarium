@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<div class="page page-books">
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {{ content }}
+
+  {% if site.data.books and site.data.books.size > 0 %}
+  <section class="book-database">
+    {% assign books_2026 = site.data.books | where: "year_group", "2026" %}
+    {% assign books_2025 = site.data.books | where: "year_group", "2025" %}
+    {% assign books_2024 = site.data.books | where: "year_group", "2024" %}
+
+    {% if books_2026.size > 0 %}
+    <section class="book-year-section">
+      <h2 class="section-label">2026</h2>
+    <div class="book-cards">
+      {% for book in books_2026 %}
+      <article class="book-card">
+        <div class="book-cover-wrap">
+          {% if book.cover %}
+          <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
+          {% else %}
+          <div class="book-cover book-cover-placeholder">{{ book.title | slice: 0 }}</div>
+          {% endif %}
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">{{ book.title | escape }}</h3>
+          <p class="book-meta">
+            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
+          </p>
+          {% if book.rating and book.rating != "" %}
+          <p class="book-rating">★ {{ book.rating }}</p>
+          {% endif %}
+          {% if book.status %}
+          <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    </section>
+    {% endif %}
+
+    {% if books_2025.size > 0 %}
+    <hr class="book-section-break" />
+    <section class="book-year-section">
+      <h2 class="section-label">2025</h2>
+    <div class="book-cards">
+      {% for book in books_2025 %}
+      <article class="book-card">
+        <div class="book-cover-wrap">
+          {% if book.cover %}
+          <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
+          {% else %}
+          <div class="book-cover book-cover-placeholder">{{ book.title | slice: 0 }}</div>
+          {% endif %}
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">{{ book.title | escape }}</h3>
+          <p class="book-meta">
+            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
+          </p>
+          {% if book.rating and book.rating != "" %}
+          <p class="book-rating">★ {{ book.rating }}</p>
+          {% endif %}
+          {% if book.status %}
+          <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    </section>
+    {% endif %}
+
+    {% if books_2024.size > 0 %}
+    <hr class="book-section-break" />
+    <section class="book-year-section">
+      <h2 class="section-label">2024</h2>
+    <div class="book-cards">
+      {% for book in books_2024 %}
+      <article class="book-card">
+        <div class="book-cover-wrap">
+          {% if book.cover %}
+          <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
+          {% else %}
+          <div class="book-cover book-cover-placeholder">{{ book.title | slice: 0 }}</div>
+          {% endif %}
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">{{ book.title | escape }}</h3>
+          <p class="book-meta">
+            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
+          </p>
+          {% if book.rating and book.rating != "" %}
+          <p class="book-rating">★ {{ book.rating }}</p>
+          {% endif %}
+          {% if book.status %}
+          <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    </section>
+    {% endif %}
+  </section>
+  {% endif %}
+
+</div>

@@ -17,6 +17,9 @@ bsky_url: "https://bsky.app/profile/9ranjal.bsky.social"
 plugins:
   - jekyll-feed
 
+# Ensure assets/images (and subdirs) are copied to _site (for local and GitHub Pages)
+include: ["assets/images"]
+
 # ✅ Only show About in header nav (no Topics, no tag pages)
 header_pages:
   - about.markdown
