@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="page page-movies">
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {{ content }}
+
+  {% if site.data.movies and site.data.movies.size > 0 %}
+  {% assign movies_2026 = site.data.movies | where: "year_group", "2026" %}
+  {% if movies_2026.size > 0 %}
+  <section class="book-database">
+    <section class="book-year-section">
+      <h2 class="section-label">2026</h2>
+      <div class="book-cards">
+        {% for movie in movies_2026 %}
+        <article class="book-card">
+          <div class="book-cover-wrap">
+            {% if movie.cover %}
+            <img class="book-cover" src="{{ movie.cover | escape }}" alt="" loading="lazy" />
+            {% else %}
+            <div class="book-cover book-cover-placeholder">{{ movie.title | slice: 0 }}</div>
+            {% endif %}
+          </div>
+          <div class="book-info">
+            <h3 class="book-title">{{ movie.title | escape }}</h3>
+            <p class="book-meta">{% if movie.year %}{{ movie.year }}{% endif %}</p>
+            {% if movie.rating and movie.rating != "" %}
+            <p class="book-rating">{{ movie.rating }}</p>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  </section>
+  {% endif %}
+  {% endif %}
+
+</div>

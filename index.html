@@ -125,20 +125,14 @@ layout: default
   {% endif %}
 
   <!-- Music -->
-  {% assign music_posts = site.posts | where: "categories", "music" %}
-  {% if music_posts.size > 0 %}
   <section class="post-section" id="music">
     <div class="section-label">Music</div>
     <ul class="post-list">
-      {% for post in music_posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-link" href="{{ '/music/' | relative_url }}">Overview</a>
       </li>
-      {% endfor %}
     </ul>
   </section>
-  {% endif %}
 
   <!-- Books -->
   <section class="post-section" id="books">
@@ -151,20 +145,14 @@ layout: default
   </section>
 
   <!-- Movies -->
-  {% assign movies_posts = site.posts | where: "categories", "movies" %}
-  {% if movies_posts.size > 0 %}
   <section class="post-section" id="movies">
     <div class="section-label">Movies</div>
     <ul class="post-list">
-      {% for post in movies_posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%Y · %m" }}</span>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-link" href="{{ '/movies/' | relative_url }}">Overview</a>
       </li>
-      {% endfor %}
     </ul>
   </section>
-  {% endif %}
 
   <hr />
 

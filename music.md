@@ -1,7 +1,5 @@
 ---
-layout: category
+layout: music
 title: Music
-category: music
 permalink: /music/
 ---
-

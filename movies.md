@@ -1,7 +1,5 @@
 ---
-layout: category
+layout: movies
 title: Movies
-category: movies
 permalink: /movies/
 ---
-

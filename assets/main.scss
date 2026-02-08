@@ -372,10 +372,12 @@ hr {
 }
 
 /* -----------------------------
-   Books: personal database (cards)
+   Books / Music / Movies: personal database (cards)
    ----------------------------- */
 
-.page-books .section-label {
+.page-books .section-label,
+.page-music .section-label,
+.page-movies .section-label {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -384,7 +386,9 @@ hr {
   text-transform: none;
 }
 
-.page-books .section-label:first-of-type {
+.page-books .section-label:first-of-type,
+.page-music .section-label:first-of-type,
+.page-movies .section-label:first-of-type {
   margin-top: 1.5rem;
 }
 

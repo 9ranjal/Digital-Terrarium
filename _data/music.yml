@@ -1,0 +1,101 @@
+# Albums — year_group: "2026"
+# Covers: run ruby scripts/fetch_music_covers.rb to fill missing (MusicBrainz + Cover Art Archive)
+
+# ——— 2026 ———
+- title: "No Pussyfooting"
+  artist: "Brian Eno & Robert Fripp"
+  year: 1973
+  cover: "https://coverartarchive.org/release/b72e3d2a-1704-479d-82dc-d0158f1d2c09/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Alive 2007"
+  artist: "Daft Punk"
+  year: 2007
+  cover: "https://coverartarchive.org/release/126b20d1-371c-3db4-8a3c-f256cd4ea81f/16339183003-500.jpg"
+  rating: 5
+  year_group: "2026"
+
+- title: "Fashion Week (Instrumentals)"
+  artist: "Death Grips"
+  year: 2015
+  cover: "https://coverartarchive.org/release/1b50a49d-b05b-4163-902a-3f850c93feca/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "niggas on the moon"
+  artist: "Death Grips"
+  year: 2014
+  cover: "https://coverartarchive.org/release/8e65b9de-3b2b-489a-8182-ec4b261faa64/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "White Pony"
+  artist: "Deftones"
+  year: 2000
+  cover: "https://coverartarchive.org/release/a30f099b-2632-44a4-9527-e6b7c12c672e/front-500"
+  rating: 4
+  year_group: "2026"
+
+- title: "Innovator"
+  artist: "Derrick May"
+  year: 1997
+  cover: "https://coverartarchive.org/release/87a1d85d-e842-4887-b489-2bbd2b4deef6/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Sleep"
+  artist: "DJ Olive"
+  year: 2001
+  cover: "https://coverartarchive.org/release/cd200b3a-b625-4b7e-b159-3848e558068a/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Aviator"
+  artist: "Funker Vogt"
+  year: 2007
+  cover: "https://coverartarchive.org/release-group/09d3cdd3-ff5e-339f-9834-26c5f700040d/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Lift Your Skinny Fists Like Antennas to Heaven"
+  artist: "Godspeed You! Black Emperor"
+  year: 2000
+  cover: "https://coverartarchive.org/release/e3334c4e-9612-43a2-923b-27e33acbd705/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Honor Killed The Samurai"
+  artist: "Ka"
+  year: 2016
+  cover: "https://coverartarchive.org/release-group/a87472bc-03fb-4d9a-8721-f54128c82e14/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "The Fat of the Land"
+  artist: "The Prodigy"
+  year: 1997
+  cover: "https://coverartarchive.org/release/a474b6b8-ad1e-4ffa-8da2-b6baea835308/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "In Times New Roman..."
+  artist: "Queens of the Stone Age"
+  year: 2023
+  cover: "https://coverartarchive.org/release/30960167-58be-426e-88f7-686148ecf232/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Diskoding"
+  artist: "Siriusmo"
+  year: 2009
+  cover: "https://coverartarchive.org/release-group/40bf13d1-8be0-3aa2-ac8c-00305ad66938/front-500"
+  rating:
+  year_group: "2026"
+
+- title: "Dubnobasswithmyheadman"
+  artist: "Underworld"
+  year: 1994
+  cover: "https://coverartarchive.org/release/47281e2c-7611-356e-b780-1c820f3b963d/front-500"
+  rating:
+  year_group: "2026"
