@@ -19,7 +19,7 @@ layout: default
   {%- endfor -%}
   {%- endunless -%}
 
-  {%- assign tagged_posts = site.tags[resolved_tag] | sort: 'date' -%}
+  {%- assign tagged_posts = site.tags[resolved_tag] | sort: 'date' | reverse -%}
 
   {% if tagged_posts and tagged_posts.size > 0 %}
   <ul class="post-list">

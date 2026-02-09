@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aanae"
+title: "Aanae - Experiments with RAG"
 date: 2025-08-26
 tags: [AI, RAG, Aanae]
 categories: projects
