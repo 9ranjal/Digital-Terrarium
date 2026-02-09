@@ -4,4 +4,3 @@ title: Training
 category: training
 permalink: /training/
 ---
-

@@ -4,4 +4,3 @@ title: Mountains
 category: mountains
 permalink: /mountains/
 ---
-

@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Work"
+date: 2025-12-31
+tags: [Me]
+---
+
+I graduated from **WBNUJS** in 2016. Some tidbits:
+- I was the last person on the general merit list; had almost booked my tickets for NLIU Bhopal when I got the mail saying I’d cleared NUJS.
+- I got debarred in my first exam of law school (*Contracts I*).
+- I was the first person in my batch to land a job (a firm run by alumni showed up for on-campus interviews ahead of *Day Zero*).
+
+---
+
+## Work Experience  
+*(in reverse chronological order)*
+
+---
+
+### **Now — Independent Consulting**  
+*Nov 2024 – Present*
+
+I consult on **venture operations** and **AI implementation**.
+
+Recent work includes:
+- Designing **automated legal systems** for an AI-native law firm  
+- **Data pipeline optimisation** for a private credit startup
+
+---
+
+### **Sequoia Capital (India & SEA)**  
+*March 2021 – October 2024*
+
+- **2021:** Selected *(from ~2,000 applicants)* into Sequoia Capital’s parallel analyst program for the Operations team; offered a 2-year contract. Joined immediately after the firm raised a $2.8B fund.
+- **2021–2022:** Supported execution for ~100 deals across geographies during ZIRP-era peak deployment velocity.
+- **2023:** Retained and converted to **full-time** as my role’s focus shifted to **portfolio management**. Completed **CFA Level I** around this time.
+- **2024:** Transitioned to **internal systems, data, and process design**. Built end-to-end deal-operations and reporting infrastructure using **Power Query, Power BI, and Python**; consolidated fragmented data into a **single source of truth** covering **100+ live deals**, enabling:
+  - real-time visibility  
+  - cycle-time diagnostics  
+  - bottleneck prediction for investors and internal stakeholders
+- **Late 2024:** After seeing a fund through its **full lifecycle** *(raise → deploy → manage → harvest)*, exited to pursue **independent, AI-first work**—self-funded learning and consulting focused on **data systems, workflows, and applied AI**.
+
+---
+
+### **AZB & Partners**  
+*November 2019 – February 2021*
+
+- A running refrain throughout law school / my early career was that I had no idea what the inside of a Tier-1 law firm looks like**. My time at AZB & Partners** settled that score.
+- Worked in the general corporate & transactions team, with exposure to big-ticket M&A and Private Equity transactions. Crucially, I saw how billion-dollar deals could be abstracted into nuts-and-bolts workflows.
+- A memorable detour involved helping set up a ~200 MW power plant in Rajasthan — at the time, one of the largest solar facilities in the country. To do my job well, I had to learn **how a solar facility actually operates, from how solar panels are made to supply-chain hijinks.
+
+---
+
+### **Lexygen**  
+*November 2017 – October 2019*
+
+- **Lexygen** is a boutique firm specialising in **VC transactions**. I had **patient mentors** who taught me how to execute deals.
+- The firm works with leading consumer VCs, and it’s always gratifying to walk down a supermarket aisle knowing I helped with funding rounds for Epigamia, Veeba, Sula Wines, and others.
+
+---
+
+### **Zehn**  
+*July 2016 – October 2017*
+
+- **Zehn** was a boutique law firm set up by WBNUJS alumni. When I joined, it functioned as a **captive unit for Uber**, handling public policy and government engagement as Uber launched operations in South India. Uber’s story is a classic RegTech case study - trying to fit tech-enabled operations into legacy regulation. This work continues to shape how I approach my analysis of laws and regulations even today.
+- I also worked with the **Government of Karnataka** on implementing its **Start-up Policy 2015–20**, and helped operationalise its marquee investment platform, **Idea2PoC**. Happy to see this still going strong today.
