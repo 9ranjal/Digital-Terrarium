@@ -1,9 +1,21 @@
 title: Pranjal Singh
 email: 9ranjal@gmail.com
-description: "Digital Terrarium."
+# SEO: include full name and topics so the site ranks for "Pranjal Singh" and related searches
+description: "Pranjal Singh's personal site — venture operations, AI, writing, mountaineering. Digital terrarium."
 # For GitHub Pages with custom domain (pranjal-singh.com)
 baseurl: ""
 url: "https://pranjal-singh.com"
+# Author and social for jekyll-seo-tag (better snippets and rich results)
+author:
+  name: Pranjal Singh
+social:
+  name: Pranjal Singh
+  links:
+    - https://github.com/9ranjal
+    - https://www.linkedin.com/in/9ranjal
+    - https://bsky.app/profile/9ranjal.bsky.social
+# Logo for publisher/rich results (optional but recommended)
+logo: "/assets/images/profile-torso.png"
 
 theme: minima
 
@@ -16,6 +28,7 @@ bsky_url: "https://bsky.app/profile/9ranjal.bsky.social"
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Ensure assets/images (and subdirs) are copied to _site (for local and GitHub Pages)
 include: ["assets/images"]

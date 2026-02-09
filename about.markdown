@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "About Pranjal Singh — venture operations and AI consultant. Projects, writing, training, and mountains."
 ---
 
 I am Pranjal. This is my digital terrarium.

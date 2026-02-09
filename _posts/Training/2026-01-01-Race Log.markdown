@@ -11,7 +11,7 @@ Update this annually for a record of my races.
 The goal is to be intentional about logging race reports. Please see: [MC Cycling's blog](https://mccyclingdiary.blogspot.com/) - an excellent compendium from one of BLR's best ultracyclists.
 
 ## 2026
-- Mumbai Marathon
+- [Tata Mumbai Marathon]({% post_url Training/2026-01-18-Tata-Mumbai-Marathon-2026 %})
 
 ## 2025
 - Kodagu Half Marathon

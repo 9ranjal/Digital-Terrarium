@@ -10,6 +10,10 @@
         {%- if about_page -%}
           <a class="page-link" href="{{ about_page.url | relative_url }}">About</a>
         {%- endif -%}
+        {%- assign work_post = site.posts | where_exp: "p", "p.title == 'Work'" | first -%}
+        {%- if work_post -%}
+          <a class="page-link" href="{{ work_post.url | relative_url }}">Work</a>
+        {%- endif -%}
       </nav>
     </div>
   </div>

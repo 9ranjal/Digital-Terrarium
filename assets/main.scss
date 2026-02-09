@@ -197,6 +197,13 @@ code {
   font-size: 0.9em;
 }
 
+/* Mermaid diagrams: contain and allow horizontal scroll when wide */
+.mermaid {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
 blockquote {
   border-left: 2px solid $line;
   padding-left: $spacing-unit / 2;

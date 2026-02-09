@@ -4,3 +4,88 @@ title: "Chunking"
 date: 2025-09-08
 tags: [AI, RAG, LLMs, data, Aanae]
 ---
+
+TL;DR:
+AI systems can’t read everything at once, so notes must be broken into retrievable units that still make sense on their own. I started with a naïve script that produced ~100k mostly broken fragments, then iteratively rebuilt the pipeline—splitting Markdown by headers, treating Excel rows differently, adding overlap, templates, and QA—until the corpus collapsed to ~30k semantically complete chunks that an AI can actually reason over.
+
+For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+
+---
+
+After getting my notes into clean Markdown and spreadsheets, the next step seemed simple: break them into pieces a language model can retrieve. Here's why per Cursor:
+> A retrieval-augmented system cannot pass your entire note corpus to a model every time you ask a question. Models have finite context windows, retrieval has latency and cost, and embedding search works over fixed-size vectors, not whole documents. Something has to decide which parts of your notes are even eligible to be shown to the model.
+
+I wrote a script. It produced roughly **100,000 chunks**. This seemed impressive - 100k chunks - surely it signified the depth of my data corpus. Then I reviewed the output JSON, scrolling through fragments like "as mentioned above" and "see below for details" and rows of bare percentages with no column headers - a large number of those chunks were gibberish, mid-sentence fragments that made no sense. That was early July. By late August the number had collapsed to around **30,000**, and most of the work in between was figuring out what to throw away and why.
+
+---
+## The First Script
+
+The first version (`c304294`, July 5) was a monolith: a single `runner.py` that read files, split text, and wrote JSON. There was a `chunker.py` next to it, a `merge_fragments.py` to glue small pieces together, a `chunk_qc.py` for basic checks. Everything lived in flat files with no shared schema.
+
+It ran but the output was mostly junk. Mid-sentence cuts everywhere. Thousands of "context-dead" fragments: history notes where "the revolt began in 1857" landed in one chunk and the causes landed in another. Excel rows where the number "42%" appeared with no column header to explain what it measured.
+
+The mistake was assuming chunking is about size. In practice, it is about preserving semantic completeness under retrieval. A chunk needs to carry enough meaning to be useful when it arrives in a prompt alone, without the document around it.
+
+---
+## Splitting the Pipeline
+
+The first real fix (`3eb55f2`, July 24) was admitting that Markdown and Excel need different treatment. I deleted `runner.py` and `merge_fragments.py` and created `markdown_runner.py` and `excel_runner.py`.
+
+**For Markdown**, the key insight was that my notes already had structure. Headers (both `#`-style and the `{.underline}` artifacts from OneNote export) marked topic boundaries. So instead of windowing across an entire file, the runner first calls `parse_markdown_sections()` to split by headers, then chunks within each section. It uses spaCy (`en_core_web_trf`) for sentence splitting, then builds overlapping windows of sentences: window size of 100 sentences, 30% overlap, so the step is 70 sentences. A short header-and-bullet chunk (under 20 words, starting with `-` or `*` or `•`) gets merged forward into the next window, up to a cap of 150 words. Without that merge rule, I was getting hundreds of orphaned bullet points.
+
+**For Excel**, the assumption is different: one row, one chunk. The runner reads each row, tries to apply a structured template (more on that below), falls back to joining the non-empty cell values with periods, and emits one chunk. No sentence splitting, no windowing. Column headers stay attached through the template so "GDP" or "Year" doesn't float alone.
+
+### Architectural decisions in the core
+
+A few code-level choices shaped how chunking actually works. They are worth spelling out because they evolved through trial and error, not upfront design:
+
+- **Sentence splitting via spaCy, not regex.** The first chunker split on periods and newlines. That broke on abbreviations ("Dr. B.R. Ambedkar"), numbered lists ("1. The Act was passed in..."), and legal citations. Switching to spaCy's `en_core_web_trf` model for sentence boundary detection fixed most of these. It was slower, but the output was usable.
+- **Overlap as a sliding window of sentences, not tokens.** The overlap function takes a flat list of sentences and returns overlapping windows. The unit is sentences, not characters or tokens. I chose this because a sentence is the smallest unit that can carry a complete assertion. The parameters (window size of 100 sentences, 30% overlap, step of 70) mean roughly 30 sentences overlap between adjacent chunks. In practice most sections are far shorter than 100 sentences, so a section usually becomes one or two chunks. Overlap matters mainly in long prose sections, where boundary effects are real.
+- **The header+bullet merge heuristic.** If a window produces text under 20 words and any sentence starts with a bullet marker, the builder tries to merge it forward into the next window, up to a cap of 150 words. This was added because my notes had patterns like a short heading followed by a 3-item bullet list, and without merging, the heading became one tiny chunk and the bullets became another. Neither was retrievable on its own. The 20-word threshold and 150-word cap were tuned by hand against flagged samples.
+- **Separate quality bands for Markdown vs Excel.** The chunk builder branches on type. Markdown: fragment threshold at 15 words, max at 500 words. Fragments are flagged but not auto-omitted (because a short factual sentence like "Article 32 guarantees the right to constitutional remedies" is valid). Excel: fragment at 8 words, max at 200 words. Excel fragments *are* auto-omitted, because an 8-word row almost never carries enough context. These numbers were initially guesses, then adjusted after several rounds of reviewing the QA flagged CSVs.
+- **Context-dead detection.** A hardcoded list of 20 phrase starters: "click here", "see above", "see below", "as mentioned", "as stated", "refer to", "for more", "for details", and so on. If a chunk's text begins with any of these, it gets flagged for omission. This caught a surprising volume of junk in the early runs. These are the leftovers of documents written for sequential reading, where "as discussed above" assumes you just read the previous paragraph. In retrieval, that paragraph is gone.
+
+---
+## The Excel Problem (and Template Registry)
+
+Markdown chunking was tedious but straightforward; Excel was harder. Eighty-two files across history, geography, polity, economy, science—each with different columns. Naively joining cells gave "Khyber. Pakistan. Afghanistan. 1070m." Not useful.
+
+The fix was `template_registry.py` (Aug 20, `c0c87d6`): structured templates per file pattern, built from a manual audit. Each template composes columns into a sentence (e.g. passes: "The {Pass} pass is in {State}, connecting {Connects}, at {Altitude}."). When no template matches, fallback runs `clean_mnemonic_patterns()` and `remove_generic_tags()` before period-joining.
+
+Early row skipping: drop rows with fewer than 2 non-empty fields, mostly numeric values, or purely structural text ("Chapter 1"). Those go to a discarded-rows report with an explainability block. There's also post-processing (optional T5, sentence-validity checks, checkpointing)—more about pipeline maturity than chunking; I'll leave that for another time. The discarded-rows reports were the only reliable way to see what was thrown away and whether it mattered.
+
+---
+## Aside: Why a custom chunker (not Docling / Marker / other)
+
+For this corpus I chose a custom pipeline over off-the-shelf tools (Docling, Marker, etc.). **Trade-off:** generic chunkers are layout-aware (headings, paragraphs, tables) and work on any PDF/DOCX without file-specific logic—but they can't encode note-taking conventions. My Markdown had `{.underline}` artifacts that aren't standard headers; my Excel needed per-file templates to turn columns into coherent sentences. The quality bands, context-dead detection, and row-skipping rules are all tuned to failure modes in *this* data. So: custom script for the core corpus, with format and conventions baked in; a generic chunker would have left too much noise.
+
+---
+## What Chunking Optimises For
+
+Looking back, the pipeline settled on three things:
+
+- **Semantic completeness per chunk.** Each chunk should carry a self-contained idea, not a sentence fragment or a row of bare numbers.
+- **Format-appropriate boundaries.** Markdown splits on section headers; Excel preserves whole rows. The boundary logic matches the data, not a universal token count.
+- **Aggressive filtering of noise.** Context-dead fragments, malformed rows, and stubs get flagged or omitted before they ever reach an embedding model.
+
+---
+## What I Still Couldn't Measure
+
+Some things I believed were true but couldn't verify from the pipeline outputs:
+
+- **Section-aligned chunks vs random slices.** I was fairly sure that chunks aligned with coherent sections produced better retrieval than random slices. I could see it in qualitative spot-checks (the answer to "causes of the 1857 revolt" was better when the chunk contained the full causal paragraph rather than a fragment), but I never instrumented it properly.
+- **Boundary effects and overlap.** I suspected that overlapping windows helped with boundary effects, because a fact near the edge of one window would appear in the next. The overlap ratio of 0.3 was chosen by feel, not by measurement.
+- **What the QA metrics actually told me.** The `compute_metrics()` function in the QA utilities gave me the numbers I could trust: total chunks, how many flagged for omission, the distribution of quality labels ("ok", "fragment", "too_long", "context_dead", "short"), average word count of surviving chunks, and a histogram of retrieval scores. The merge-and-normalize runner (`merge_and_normalize.py`) loads the latest Markdown and Excel chunk files, normalizes them, writes compressed final output, and generates the full QA artifact set: metrics JSON, summary Markdown, a random sample, flagged chunks as JSON and CSV for human review, and a semantic type analysis. Those artifacts were what I actually reviewed between runs. Not the raw chunks.
+
+---
+## What's Left Open
+
+By ~30k chunks the retrieval quality felt reasonable and the QA reports were mostly clean. But chunking still leaves problems that chunking alone can't solve.
+
+A well-bounded chunk can still say "the Act" without naming which act. It can reference "the above scheme" when "above" no longer exists in context. It can be dense with acronyms that only make sense if you already know the domain. The chunk is correctly scoped. But it isn't self-contained.
+
+That is the problem enrichment addresses, and it's the subject of the next post.
+
+---
+
+_Next: Enrichment (and why chunks need explicit context before they're useful)_
