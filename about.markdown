@@ -13,7 +13,7 @@ A few links to explore:
 - [Creative Writing](/writing/)
 - [Training](/training/) logs and race reports 
 - Adventures in the [Mountains](/mountains/)
-- Record of [Music](/music/), [Books](/books/), and [Movies](/movies/).
+- Record of [Music](/music/), [Books](/books/), and [Movies](/movies/)
 
 For how I use AI in my writing, please see [this post]({% link _posts/Miscellaneous/2024-01-01-how-i-use-ai.markdown %}).
 
