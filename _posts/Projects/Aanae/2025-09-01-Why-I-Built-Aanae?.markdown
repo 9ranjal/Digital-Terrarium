@@ -8,7 +8,7 @@ tags: [AI, RAG, LLMs, data, Aanae]
 **TL;DR**  
 I read widely and made copious notes. I then started experimenting with LLMs and retrieval-augmented generation (RAG) using those notes. I realised there was a strong overlap with the way UPSC/PSC preparation works. I eventually tooled this RAG pipeline into a chatbot experience for aspirants (covered in the other posts in this series).
 
-For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
 
 ---
 ## The Starting Point

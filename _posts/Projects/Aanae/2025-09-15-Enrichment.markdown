@@ -10,7 +10,7 @@ TL;DR:
 
 - I went from brittle regex hacks and overstuffed metadata to a focused enrichment pipeline that turns raw chunks into self-contained, searchable records with the right entities, concepts, and scores, so retrieval actually works on 30,000+ pieces of text.
 
-For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
 
 ---
 ## What the First Chunks Were Missing

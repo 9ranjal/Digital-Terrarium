@@ -7,7 +7,7 @@ tags: [Babel, Legaltech, AI, LLMs]
 
 **TL;DR** -- An uploaded term sheet flows through a five-stage async pipeline that decomposes it into a scored clause graph. A copilot explains the deterministic analysis in plain language. A LangGraph state machine generates term sheets from natural-language deal descriptions. The LLM never picks the band; it explains what the engine already decided.
 
-*For links to all the posts in this series, see [Babel](/2025/01/31/what-is-babel.html).*
+*For links to all the posts in this series, see [Babel](/projects/2025/01/31/what-is-babel.html).*
 
 ---
 

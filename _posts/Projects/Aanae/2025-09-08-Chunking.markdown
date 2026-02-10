@@ -8,7 +8,7 @@ tags: [AI, RAG, LLMs, data, Aanae]
 TL;DR:
 AI systems can’t read everything at once, so notes must be broken into retrievable units that still make sense on their own. I started with a naïve script that produced ~100k mostly broken fragments, then iteratively rebuilt the pipeline—splitting Markdown by headers, treating Excel rows differently, adding overlap, templates, and QA—until the corpus collapsed to ~30k semantically complete chunks that an AI can actually reason over.
 
-For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
 
 ---
 

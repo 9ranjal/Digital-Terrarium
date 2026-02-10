@@ -5,6 +5,12 @@ date: 2025-09-01
 tags: [AI, RAG, LLMs, data, Aanae]
 ---
 
+**TL;DR:** Before you can do RAG, you need your knowledge in a format machines can read. My notes lived in OneNote and PDFs—locked in, unstructured. I got everything out (export → HTML → Markdown), cleaned and normalized it, and ended up with plain-text Markdown and spreadsheets that the rest of the pipeline could actually use.
+
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
+
+---
+
 Before you can build anything intelligent with AI, you need to answer a simple question: **Where is your knowledge, and what format is it in?**
 
 For me, the answer was: OneNote.

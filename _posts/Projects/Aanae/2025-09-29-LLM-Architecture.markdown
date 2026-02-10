@@ -9,7 +9,7 @@ TL;DR: I built a Planner → Writer → Critic pipeline around DeepSeek (via Ope
 
 The retrieval post ended with chunks selected from 30,000. But the production system doesn't just use those chunks — it runs two parallel knowledge paths (the chunk database and live web search) and merges them before the LLM ever sees them. This post covers that convergence, the answer generation pipeline, and the tech stack holding it together.
 
-For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
 
 ---
 ## The Tech Stack

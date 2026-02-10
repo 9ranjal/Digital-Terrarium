@@ -11,7 +11,7 @@ The enrichment post ended with self-contained chunks: entities, concept tags, re
 
 Chunking decides the boundaries. Enrichment fills in the context. Retrieval decides what the LLM actually sees.
 
-For links to all the posts in this series, see [Aanae](/2025/08/26/Aanae.html).
+For links to all the posts in this series, see [Aanae](/projects/2025/08/26/Aanae.html).
 
 ---
 ## Why Retrieval Is the Hard Part
