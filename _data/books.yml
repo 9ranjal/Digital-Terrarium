@@ -2,6 +2,7 @@
 # year_group: "2026" | "2025" | "2024" (when you added / read)
 
 # ——— 2026 ———
+
 - title: "Dubliners"
   author: "James Joyce"
   year: 1914
@@ -11,7 +12,17 @@
   year_group: "2026"
   review: "Highlights: Clay, Evelyn, A Little Cloud, A Painful Case."
 
+
+- title: "Desire"
+  author: "Haruki Murakami"
+  year: 2017
+  cover: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1488651923i/33952849.jpg"
+  rating: 4
+  status: "read"
+  year_group: "2026"
+
 # ——— 2025 ———
+
 - title: "Cuckold"
   author: "Kiran Nagarkar"
   year: 1999
@@ -19,6 +30,7 @@
   rating: 5
   status: "read"
   year_group: "2025"
+
 - title: "The Old Man and the Sea"
   author: "Ernest Hemingway"
   year: 1952
@@ -26,6 +38,7 @@
   rating: 3
   status: "read"
   year_group: "2025"
+
 - title: "Twenty Years After (Musketeers Trilogy #2)"
   author: "Alexandre Dumas"
   year: 1845
@@ -33,6 +46,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "Waiting for the Barbarians"
   author: "J.M. Coetzee"
   year: 1980
@@ -40,6 +54,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "The Three Musketeers (Musketeers Trilogy #1)"
   author: "Alexandre Dumas"
   year: 1844
@@ -47,6 +62,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "The Count of Monte Cristo"
   author: "Alexandre Dumas"
   year: 1844
@@ -54,6 +70,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "On Earth We're Briefly Gorgeous"
   author: "Ocean Vuong"
   year: 2019
@@ -61,6 +78,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "No Longer at Ease (The African Trilogy, #3)"
   author: "Chinua Achebe"
   year: 1961
@@ -68,6 +86,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "Man's Search for Meaning"
   author: "Viktor E. Frankl"
   year: 1946
@@ -75,6 +94,7 @@
   rating: 5
   status: "read"
   year_group: "2025"
+
 - title: "A Long Walk to Freedom: 1918-1962 v. 1"
   author: "Nelson Mandela"
   year: 1994
@@ -82,6 +102,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "Normal People"
   author: "Sally Rooney"
   year: 2018
@@ -89,6 +110,7 @@
   rating: 4
   status: "read"
   year_group: "2025"
+
 - title: "Klopp: My Liverpool Romance"
   author: "Anthony Quinn"
   year: 2021
@@ -98,117 +120,137 @@
   year_group: "2025"
 
 # ——— 2024 ———
+
 - title: "Dune"
   author: "Frank Herbert"
   cover: "https://covers.openlibrary.org/b/id/11481354-M.jpg"
   year: 1965
   status: "read"
   year_group: "2024"
+
 - title: "Do Androids Dream of Electric Sheep?"
   author: "Philip K. Dick"
   cover: "https://covers.openlibrary.org/b/id/207515-M.jpg"
   year: 1968
   status: "read"
   year_group: "2024"
+
 - title: "Neuromancer"
   author: "William Gibson"
   cover: "https://covers.openlibrary.org/b/id/283860-M.jpg"
   year: 1984
   status: "read"
   year_group: "2024"
+
 - title: "Rendezvous with Rama"
   author: "Arthur C. Clarke"
   cover: "https://covers.openlibrary.org/b/id/13472608-M.jpg"
   year: 1973
   status: "read"
   year_group: "2024"
+
 - title: "Hyperion Cantos"
   author: "Dan Simmons"
   cover: "https://covers.openlibrary.org/b/id/13495972-M.jpg"
   year: 1989
   status: "read"
   year_group: "2024"
+
 - title: "Problems of Philosophy"
   author: "Bertrand Russell"
   cover: "https://covers.openlibrary.org/b/id/6947403-M.jpg"
   year: 1912
   status: "read"
   year_group: "2024"
+
 - title: "The Communist Manifesto"
   author: "Karl Marx & Friedrich Engels"
   year: 1848
   status: "read"
   year_group: "2024"
+
 - title: "Measuring What Matters"
   author: "John Doerr"
   cover: "https://covers.openlibrary.org/b/id/10706481-M.jpg"
   year: 2018
   status: "read"
   year_group: "2024"
+
 - title: "Zero to One"
   author: "Peter Thiel"
   cover: "https://covers.openlibrary.org/b/id/9002334-M.jpg"
   year: 2014
   status: "read"
   year_group: "2024"
+
 - title: "The Innovation Blindspot"
   author: "Ross Baird"
   year: 2017
   status: "read"
   year_group: "2024"
+
 - title: "Mahabharata"
   author: "Vyasa"
   cover: "https://covers.openlibrary.org/b/id/10320547-M.jpg"
   year:
   status: "read"
   year_group: "2024"
+
 - title: "Norwegian Wood"
   author: "Haruki Murakami"
   cover: "https://covers.openlibrary.org/b/id/2237620-M.jpg"
   year: 1987
   status: "read"
   year_group: "2024"
+
 - title: "The Great Gatsby"
   author: "F. Scott Fitzgerald"
   cover: "https://covers.openlibrary.org/b/id/10590366-M.jpg"
   year: 1925
   status: "read"
   year_group: "2024"
+
 - title: "In Cold Blood"
   author: "Truman Capote"
   cover: "https://covers.openlibrary.org/b/id/228066-M.jpg"
   year: 1966
   status: "read"
   year_group: "2024"
+
 - title: "Blindness"
   author: "José Saramago"
   year: 1995
   status: "read"
   year_group: "2024"
+
 - title: "East of Eden"
   author: "John Steinbeck"
   cover: "https://covers.openlibrary.org/b/id/11386937-M.jpg"
   year: 1952
   status: "read"
   year_group: "2024"
+
 - title: "Blood Meridian"
   author: "Cormac McCarthy"
   cover: "https://covers.openlibrary.org/b/id/419991-M.jpg"
   year: 1985
   status: "read"
   year_group: "2024"
+
 - title: "The Road"
   author: "Cormac McCarthy"
   cover: "https://covers.openlibrary.org/b/id/198120-M.jpg"
   year: 2006
   status: "read"
   year_group: "2024"
+
 - title: "Middlesex"
   author: "Jeffrey Eugenides"
   cover: "https://covers.openlibrary.org/b/id/12367196-M.jpg"
   year: 2002
   status: "read"
   year_group: "2024"
+
 - title: "The Virgin Suicides"
   author: "Jeffrey Eugenides"
   cover: "https://covers.openlibrary.org/b/id/486854-M.jpg"

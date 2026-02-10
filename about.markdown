@@ -7,7 +7,7 @@ description: "About Pranjal Singh — venture operations and AI consultant. Proj
 
 I am Pranjal. This is my digital terrarium.
 
-I currently consult on venture operations and AI-enabled services. I was previously part of the operations team at Sequoia Capital, and worked at law firms prior to that. You can read about my work [ here]({% link _posts/Miscellaneous/2026-01-01-Work.markdown %}).
+I currently consult on venture operations and AI-enabled services. I was previously part of the operations team at Sequoia Capital. You can read about my work [here]({% link _posts/Miscellaneous/2026-01-01-Work.markdown %}).
 
 A few links to explore:
 - Coding and other [Projects](/projects/)
