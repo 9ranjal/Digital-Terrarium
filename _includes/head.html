@@ -8,20 +8,25 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  {%- comment -%} JSON-LD Person schema so search engines associate this site with Pranjal Singh {%- endcomment -%}
+  {%- comment -%} JSON-LD structured data: WebSite helps Google show sitelinks; Person for profile/author {%- endcomment -%}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "WebSite",
     "name": "{{ site.title | escape }}",
     "url": "{{ site.url }}{{ site.baseurl }}/",
     "description": "{{ site.description | strip_html | escape }}",
-    "image": "{{ site.url }}{{ site.baseurl }}{{ site.logo | default: '/assets/images/profile-torso.png' }}",
-    "sameAs": [
-      "https://github.com/{{ site.github_username | default: '9ranjal' }}",
-      "https://www.linkedin.com/in/{{ site.linkedin_username | default: '9ranjal' }}"
-      {%- if site.bsky_url -%},"{{ site.bsky_url }}"{%- endif -%}
-    ]
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "image": "{{ site.url }}{{ site.baseurl }}{{ site.logo | default: '/assets/images/profile-torso.png' }}",
+      "sameAs": [
+        "https://github.com/{{ site.github_username | default: '9ranjal' }}",
+        "https://www.linkedin.com/in/{{ site.linkedin_username | default: '9ranjal' }}"
+        {%- if site.bsky_url -%},"{{ site.bsky_url }}"{%- endif -%}
+      ]
+    }
   }
   </script>
   <script type="module">
