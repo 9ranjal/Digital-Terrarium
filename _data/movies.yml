@@ -2,11 +2,15 @@
 # Covers: run ruby scripts/fetch_movie_covers.rb to fill missing (uses TMDB API)
 
 # ——— 2026 ———
+
+
 - title: "Furiosa: A Mad Max Saga"
   year: 2024
   rating: "4/5"
   cover: "https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"
   year_group: "2026"
+
+
 
 - title: "Meiyazhagan"
   year: 2024
@@ -14,11 +18,15 @@
   cover: "https://image.tmdb.org/t/p/w500/ngDEH7YqVaMCAD4LpNxRl6ScJnw.jpg"
   year_group: "2026"
 
+
+
 - title: "Maareesan"
   year: 2025
   rating: "2.5/5"
   cover: "https://image.tmdb.org/t/p/w500/c7JGfFgMnNuyF2Q4FSu7Kgip3mK.jpg"
   year_group: "2026"
+
+
 
 - title: "Sentimental Value"
   year: 2025
@@ -26,11 +34,15 @@
   cover: "https://image.tmdb.org/t/p/w500/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg"
   year_group: "2026"
 
+
+
 - title: "28 Years Later - The Bone Temple"
   year: 2026
   rating: "3.75/5"
   cover: "https://image.tmdb.org/t/p/w500/n5FygjEppOvac6yEaowi26nTyw3.jpg"
   year_group: "2026"
+
+
 
 - title: "Rental Family"
   year: 2025
@@ -38,17 +50,23 @@
   cover: "https://image.tmdb.org/t/p/w500/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg"
   year_group: "2026"
 
+
+
 - title: "Marty Supreme"
   year: 2026
   rating: "3.75/5"
   cover: "https://image.tmdb.org/t/p/w500/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg"
   year_group: "2026"
 
+
+
 - title: "Mad Max: Fury Road"
   year: 2015
   rating: "4.5/7"
   cover: "https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
   year_group: "2026"
+
+
 
 - title: "Send Help"
   year: 2026

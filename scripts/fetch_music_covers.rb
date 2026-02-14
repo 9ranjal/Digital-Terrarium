@@ -41,7 +41,8 @@ blocks = content.split(/\n(?=- title:)/)
 new_blocks = blocks.map do |block|
   next block unless block.strip.start_with?("- title:")
 
-  has_cover = block.include?("cover:")
+  cover_line = block[/cover:\s*["']?(.+?)["']?\s*$/m]
+  has_cover = cover_line && $1.to_s.strip != ""
   skip = has_cover && !refresh
   if skip
     block
