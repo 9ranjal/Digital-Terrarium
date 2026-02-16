@@ -1,24 +1,32 @@
-.PHONY: covers books movies music refresh-books refresh-movies refresh-music
+.PHONY: serve build clean install
 
-# Fetch missing covers (run from repo root)
-books:
-	ruby scripts/fetch_book_covers.rb
+# Default: run local dev server
+serve:
+	bundle exec jekyll serve
 
-movies:
-	ruby scripts/fetch_movie_covers.rb
+# Build site into _site (no server)
+build:
+	bundle exec jekyll build
 
-music:
-	ruby scripts/fetch_music_covers.rb
+# Build with incremental (faster rebuilds)
+build-incremental:
+	bundle exec jekyll build --incremental
 
-# Fetch all covers
-covers: books movies music
+# Remove generated site
+clean:
+	rm -rf _site
 
-# Refetch all covers (overwrite existing)
-refresh-books:
-	REFRESH=1 ruby scripts/fetch_book_covers.rb
+# Install Ruby dependencies
+install:
+	bundle install
 
-refresh-movies:
-	REFRESH=1 ruby scripts/fetch_movie_covers.rb
+# Full clean build
+rebuild: clean build
 
-refresh-music:
-	REFRESH=1 ruby scripts/fetch_music_covers.rb
+# Serve with drafts visible
+serve-drafts:
+	bundle exec jekyll serve --drafts
+
+# Serve on a different port (e.g. 4001)
+serve-port:
+	bundle exec jekyll serve --port 4001

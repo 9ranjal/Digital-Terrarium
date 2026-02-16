@@ -1,0 +1,128 @@
+---
+layout: default
+---
+<div class="post-with-toc">
+  <aside class="toc-sidebar" id="toc-sidebar" aria-label="Table of contents">
+    <h2 class="toc-title">Contents</h2>
+    <nav id="toc-nav"></nav>
+  </aside>
+
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}
+      </p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+</div>
+
+<script>
+(function() {
+  var nav = document.getElementById('toc-nav');
+  var article = document.querySelector('.post-with-toc .post-content');
+  if (!nav || !article) return;
+
+  var allHeadings = article.querySelectorAll('h2, h3');
+  var h2Count = article.querySelectorAll('h2').length;
+  if (h2Count === 0) {
+    document.getElementById('toc-sidebar').style.display = 'none';
+    document.querySelector('.post-with-toc').classList.remove('post-with-toc');
+    return;
+  }
+
+  function stripLeadingNumber(text) {
+    return text.replace(/^\d+[).]\s*/, '').trim();
+  }
+
+  function stripLeadingRoman(text) {
+    return text.replace(/^[IVXLC]+\.\s*/, '').trim();
+  }
+
+  var ul = document.createElement('ul');
+  ul.className = 'toc-list';
+  var currentLi = null;
+  var currentSubUl = null;
+  var h2Index = 0;
+
+  allHeadings.forEach(function(heading) {
+    var id = heading.id || heading.tagName.toLowerCase() + '-' + Math.random().toString(36).substr(2, 6);
+    if (!heading.id) heading.id = id;
+
+    if (heading.tagName === 'H2') {
+      h2Index++;
+      var li = document.createElement('li');
+
+      var row = document.createElement('div');
+      row.className = 'toc-h2-row';
+
+      var num = document.createElement('span');
+      num.className = 'toc-num';
+      num.textContent = h2Index + '.';
+
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = stripLeadingNumber(heading.textContent.trim());
+      a.className = 'toc-link';
+
+      row.appendChild(num);
+      row.appendChild(a);
+      li.appendChild(row);
+      ul.appendChild(li);
+
+      currentLi = li;
+      currentSubUl = null;
+    } else if (heading.tagName === 'H3' && currentLi) {
+      if (!currentSubUl) {
+        var toggle = document.createElement('button');
+        toggle.className = 'toc-toggle';
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Collapse subsections');
+        toggle.textContent = '\u2013';
+        currentLi.querySelector('.toc-h2-row').appendChild(toggle);
+
+        currentSubUl = document.createElement('ul');
+        currentSubUl.className = 'toc-sublist';
+        currentSubUl.hidden = false;
+        currentLi.appendChild(currentSubUl);
+
+        toggle.addEventListener('click', (function(subUl, btn) {
+          return function(e) {
+            e.preventDefault();
+            var open = !subUl.hidden;
+            subUl.hidden = open;
+            btn.textContent = open ? '+' : '\u2013';
+            btn.setAttribute('aria-expanded', String(!open));
+          };
+        })(currentSubUl, toggle));
+      }
+
+      var subLi = document.createElement('li');
+      var subA = document.createElement('a');
+      subA.href = '#' + id;
+      subA.textContent = stripLeadingRoman(stripLeadingNumber(heading.textContent.trim()));
+      subA.className = 'toc-sublink';
+      subLi.appendChild(subA);
+      currentSubUl.appendChild(subLi);
+    }
+  });
+
+  nav.appendChild(ul);
+})();
+</script>

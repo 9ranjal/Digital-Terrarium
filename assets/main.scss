@@ -11,8 +11,8 @@
 */
 
 // Typography
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
-$base-font-size: 17px !default;
+$base-font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $base-line-height: 1.65 !default;
 
@@ -659,4 +659,171 @@ hr {
   fill: currentColor;
   overflow: visible;
   flex-shrink: 0;
+}
+
+/* -----------------------------
+   Post: sidebar table of contents
+   ----------------------------- */
+
+/* TOC sits flush-left; article centered at comfortable reading width */
+
+.page-content .wrapper:has(.post-with-toc) {
+  max-width: none;
+  padding: 0;
+}
+
+.post-with-toc {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.post-with-toc .post {
+  max-width: 720px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.toc-sidebar {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  padding-right: 2rem;
+}
+
+body:has(.post-with-toc) .site-header .wrapper,
+body:has(.post-with-toc) .site-footer .wrapper {
+  max-width: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+body:has(.post-with-toc) .site-header .site-header-inner,
+body:has(.post-with-toc) .site-footer .footer-inner {
+  grid-column: 2;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.toc-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba($fg, 0.88);
+  margin: 0 0 1.25rem 0;
+  text-transform: none;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.toc-list > li {
+  margin-bottom: 0.9rem;
+}
+
+.toc-list li:last-child {
+  margin-bottom: 0;
+}
+
+.toc-num {
+  flex-shrink: 0;
+  min-width: 1.25em;
+  color: rgba($fg, 0.5);
+  font-variant-numeric: tabular-nums;
+}
+
+.toc-link {
+  color: rgba($fg, 0.68);
+  text-decoration: none;
+  display: block;
+  min-width: 0;
+}
+
+.toc-link:hover {
+  color: rgba($fg, 0.92);
+}
+
+.toc-h2-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.toc-toggle {
+  all: unset;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 0.75rem;
+  line-height: 1;
+  width: 1.2em;
+  text-align: center;
+  color: rgba($fg, 0.35);
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+
+.toc-toggle:hover {
+  color: rgba($fg, 0.75);
+}
+
+.toc-sublist {
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0 0 0 calc(1.25em + 0.4rem);
+}
+
+.toc-sublist li {
+  margin-bottom: 0.4rem;
+}
+
+.toc-sublist li:last-child {
+  margin-bottom: 0;
+}
+
+.toc-sublink {
+  color: rgba($fg, 0.5);
+  text-decoration: none;
+  font-size: 0.82rem;
+  display: block;
+  line-height: 1.45;
+}
+
+.toc-sublink:hover {
+  color: $hover;
+}
+
+/* Hide sidebar TOC on narrow screens, show inline instead */
+@media screen and (max-width: 960px) {
+  .post-with-toc {
+    display: block;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+
+  body:has(.post-with-toc) .site-header .wrapper,
+  body:has(.post-with-toc) .site-footer .wrapper {
+    max-width: $content-width;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+
+  .toc-sidebar {
+    position: static;
+    width: 100%;
+    padding: 0 0 1.25rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba($fg, 0.10);
+  }
 }
