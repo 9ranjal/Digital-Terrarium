@@ -19,8 +19,6 @@ But CFOs and General Counsels don't have the luxury of 'not having the faintest 
 
 This demands a rubric that updates SaaS-era diligence frameworks (QoE, cash flow, working capital, balance sheet, IP, material contracts) for **training data & IP**, **model dependency**, **evaluation infrastructure**, and **token economics**.
 
-Read more on this below or access the [Conclusion and TL;DR Checklist](#conclusion-and-tldr).
-
 ---
 ## 1) Financial Diligence (Classic Rubric, AI Additions)
 
