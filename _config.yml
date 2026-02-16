@@ -19,6 +19,9 @@ logo: "/assets/images/profile-torso.png"
 
 theme: minima
 
+# Include future-dated posts (e.g. date: 2026-02-17) so they show in production
+future: true
+
 minima:
   skin: dark
 
