@@ -704,8 +704,7 @@ hr {
   padding-right: 2rem;
 }
 
-body:has(.post-with-toc) .site-header .wrapper,
-body:has(.post-with-toc) .site-footer .wrapper {
+body:has(.post-with-toc) .site-header .wrapper {
   max-width: none;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -713,12 +712,20 @@ body:has(.post-with-toc) .site-footer .wrapper {
   grid-template-columns: 250px 1fr;
 }
 
-body:has(.post-with-toc) .site-header .site-header-inner,
-body:has(.post-with-toc) .site-footer .footer-inner {
+body:has(.post-with-toc) .site-header .site-header-inner {
   grid-column: 2;
   max-width: 720px;
   width: 100%;
   margin: 0 auto;
+}
+
+/* Footer on post pages: same layout as home (centered wrapper, same width as .wrapper) */
+body:has(.post-with-toc) .site-footer .wrapper {
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
 }
 
 .toc-title {
@@ -823,8 +830,7 @@ body:has(.post-with-toc) .site-footer .footer-inner {
     padding-right: $spacing-unit;
   }
 
-  body:has(.post-with-toc) .site-header .wrapper,
-  body:has(.post-with-toc) .site-footer .wrapper {
+  body:has(.post-with-toc) .site-header .wrapper {
     max-width: $content-width;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
