@@ -55,7 +55,7 @@ layout: default
     {% assign project_posts = site.posts | where: "categories", "projects" %}
     {% if project_posts.size > 0 %}
     <div class="category-block" id="projects">
-      <a class="section-label section-label-link category-heading" href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a class="section-label section-label-link category-heading" href="{{ '/projects/' | relative_url }}">Projects and Work</a>
       <ul class="post-list">
         {% for post in project_posts %}
         <li>

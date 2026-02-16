@@ -3,7 +3,7 @@ layout: post
 title: "Underwriting Companies in the Deranged Age"
 date: 2026-02-17
 tags: [AI]
-categories: writing
+categories: projects
 ---
 
 *How CFOs and General Counsels should evaluate AI-enabled companies when models commoditise software*
@@ -272,9 +272,3 @@ The new questions are:
 - **Market access:** Show readiness for **EU AI Act (general application Aug 2026)** and disclosure regimes such as **California AB 2013** where relevant.
 - **Fine-tuning ownership:** Confirm who owns fine-tuned weights/derivatives and what the model-provider terms restrict.
 - **LLM security:** Controls for prompt injection, data leakage, logging, and incident response.
-
-#### Architecture
-- **Evals:** Automated regression across quality, cost, latency, and safety. Provide at least one example where evals blocked a bad release.
-- **Model abstraction:** Ability to swap providers or models in weeks. Show routing logic and fallbacks.
-- **Observability:** Trace requests to outputs, detect drift, and roll back quickly. Provide runbooks.
-- **EODOR cadence:** Evidence of fast Evaluate → Deploy → Observe → Rollback cycles in production.
