@@ -88,7 +88,7 @@ Tax issues get missed until a buyer asks for reps:
 - Transfer pricing if a group entity intermediates the spend.
 
 ---
-### III. Token Economics: Why SaaS Math Breaks
+### IV. Token Economics: Why SaaS Math Breaks
 
 AI gross margin depends on tokens. Tokens scale with usage. Some customers cost more to serve than they pay.
 
@@ -131,7 +131,7 @@ Ask for:
 
 Traditional legal diligence still applies but AI shifts the center of gravity to **data rights, vendor dependency, and liability allocation**.
 
-### I. IP Diligence: Training Data & Rights Are the New Crown Jewels
+### I. IP Diligence: Training Data & Rights 
 
 #### A. Data Provenance, Chain of Title, and Statutory Transparency
 
@@ -238,7 +238,7 @@ Require:
 - Clear boundaries on what the model can access.
 
 ---
-## Conclusion and TL;DR
+## Conclusion and TL;DR Checklist
 
 The old questions were:
 - **What do you own?** (IP chain of title, codebase, patents)
@@ -246,7 +246,7 @@ The old questions were:
 - **Do margins scale?** (near-zero marginal cost, operating leverage)
 - **Can they keep competitors out?** (product differentiation, integrations, switching costs)
 
-The new questions are:
+The new questions are: 
 - **What rights do you actually have over the inputs?**  
   Training data, customer data, outputs, and improvement rights. Show chain of title and audit-ready provenance.
 - **Who controls your COGS and your roadmap?**  
@@ -256,7 +256,7 @@ The new questions are:
 - **Can the system ship safely as models change?**  
   Evals, drift monitoring, rollback discipline, and time-to-adopt new models without breaking SLAs or compliance.
 
-### TL;DR: Checklist for Every Deal
+### Checklist for Every Deal
 
 #### Financial
 - **Quality of Earnings:** Rebuild EBITDA without provider credits, subsidised model pricing, under-spent eval/label costs, and aggressive capitalisation of “AI development”.
