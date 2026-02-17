@@ -831,9 +831,15 @@ body:has(.post-with-toc) .site-footer .wrapper {
   }
 
   body:has(.post-with-toc) .site-header .wrapper {
+    display: block;
     max-width: $content-width;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
+  }
+
+  body:has(.post-with-toc) .site-header .site-header-inner {
+    grid-column: auto;
+    max-width: none;
   }
 
   .toc-sidebar {
