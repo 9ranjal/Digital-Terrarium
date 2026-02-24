@@ -67,5 +67,6 @@ new_blocks = blocks.map do |block|
   block
 end
 
-File.write(MOVIES_PATH, new_blocks.join("\n\n"), encoding: "UTF-8")
+output = new_blocks.map { |b| b.sub(/\n+\z/, "\n") }.join("\n")
+File.write(MOVIES_PATH, output, encoding: "UTF-8")
 puts "\nDone — #{MOVIES_PATH} updated."

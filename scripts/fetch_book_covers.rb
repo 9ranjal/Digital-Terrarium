@@ -69,6 +69,6 @@ new_blocks = blocks.map do |block|
 end
 
 # First "block" might be leading comments before the first "- title:"
-out = new_blocks.join("\n\n")
+out = new_blocks.map { |b| b.sub(/\n+\z/, "\n") }.join("\n")
 File.write(BOOKS_PATH, out, encoding: "UTF-8")
 puts "\nUpdated #{updated} cover(s) in _data/books.yml"

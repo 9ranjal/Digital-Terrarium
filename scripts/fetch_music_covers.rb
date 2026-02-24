@@ -77,6 +77,6 @@ new_blocks = blocks.map do |block|
   end
 end
 
-out = new_blocks.join("\n\n")
+out = new_blocks.map { |b| b.sub(/\n+\z/, "\n") }.join("\n")
 File.write(MUSIC_PATH, out, encoding: "UTF-8")
 puts "\nUpdated #{updated} cover(s) in _data/music.yml"
