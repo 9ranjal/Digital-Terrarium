@@ -3,6 +3,12 @@
 
 # ——— 2026 ———
 
+- title: "Shot Caller"
+  year: 2017
+  rating: "3.5/5"
+  cover: 
+  "https://image.tmdb.org/t/p/w500/qLmLz2wtyYvmW8Ult3l2ngOnW8v.jpg"
+
 - title: "The Last Stop in Yuma County"
   year: 2023
   rating: "3/5"
@@ -36,13 +42,13 @@
 - title: "28 Years Later - The Bone Temple"
   year: 2026
   rating: "3.5/5"
-  cover: "https://image.tmdb.org/t/p/w500/n5FygjEppOvac6yEaowi26nTyw3.jpg"
+  cover: "https://image.tmdb.org/t/p/w500/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg"
   year_group: "2026"
 
 - title: "Rental Family"
   year: 2025
   rating: "3/5"
-  cover: "https://image.tmdb.org/t/p/w500/A5lswNlytTUrnMWsuD0NFfhZlf3.jpg"
+  cover: "https://image.tmdb.org/t/p/w500/nRrwqApUDFL8gLGyJFIdDkmoule.jpg"
   year_group: "2026"
 
 - title: "Marty Supreme"
@@ -60,5 +66,5 @@
 - title: "Send Help"
   year: 2026
   rating: "4/5"
-  cover: "https://image.tmdb.org/t/p/w500/mlV70IuchLZXcXKowjwSpSfdfUB.jpg"
+  cover: "https://image.tmdb.org/t/p/w500/kL4MgAIZIYX3sCeG34N0XfVhCtt.jpg"
   year_group: "2026"
