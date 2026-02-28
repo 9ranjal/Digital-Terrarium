@@ -1,0 +1,96 @@
+<div class="review-overlay" id="reviewOverlay" aria-hidden="true">
+  <div class="review-overlay-backdrop"></div>
+  <div class="review-overlay-content">
+    <button class="review-overlay-close" aria-label="Close">&times;</button>
+    <div class="review-overlay-cover">
+      <img id="overlayImg" src="" alt="" />
+    </div>
+    <div class="review-overlay-info">
+      <h2 class="review-overlay-title" id="overlayTitle"></h2>
+      <p class="review-overlay-meta" id="overlayMeta"></p>
+      <p class="review-overlay-rating" id="overlayRating"></p>
+      <div class="review-overlay-review" id="overlayReview"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var overlay  = document.getElementById('reviewOverlay');
+  var backdrop = overlay.querySelector('.review-overlay-backdrop');
+  var closeBtn = overlay.querySelector('.review-overlay-close');
+  var imgEl    = document.getElementById('overlayImg');
+  var titleEl  = document.getElementById('overlayTitle');
+  var metaEl   = document.getElementById('overlayMeta');
+  var ratingEl = document.getElementById('overlayRating');
+  var reviewEl = document.getElementById('overlayReview');
+
+  document.querySelectorAll('.book-card[data-title]').forEach(function (card) {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function () {
+      var title    = card.getAttribute('data-title') || '';
+      var subtitle = card.getAttribute('data-subtitle') || '';
+      var year     = card.getAttribute('data-year') || '';
+      var cover    = card.getAttribute('data-cover') || '';
+      var rating   = card.getAttribute('data-rating') || '';
+      var review   = card.querySelector('.review-text');
+
+      titleEl.textContent = title;
+
+      var meta = '';
+      if (subtitle) meta += subtitle;
+      if (subtitle && year) meta += ' \u00b7 ';
+      if (year) meta += year;
+      metaEl.textContent = meta;
+      metaEl.style.display = meta ? '' : 'none';
+
+      if (rating) {
+        ratingEl.textContent = '\u2605 ' + rating;
+        ratingEl.style.display = '';
+      } else {
+        ratingEl.style.display = 'none';
+      }
+
+      if (cover) {
+        imgEl.src = cover;
+        imgEl.alt = title;
+        imgEl.parentElement.style.display = '';
+      } else {
+        imgEl.parentElement.style.display = 'none';
+      }
+
+      reviewEl.innerHTML = '';
+      if (review) {
+        var text = review.textContent.trim();
+        var paras = text.split(/\n\s*\n|\n/);
+        paras.forEach(function (p) {
+          var trimmed = p.trim();
+          if (!trimmed) return;
+          var el = document.createElement('p');
+          el.textContent = trimmed;
+          reviewEl.appendChild(el);
+        });
+        reviewEl.style.display = '';
+      } else {
+        reviewEl.style.display = 'none';
+      }
+
+      overlay.classList.add('is-active');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function close() {
+    overlay.classList.remove('is-active');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('is-active')) close();
+  });
+})();
+</script>

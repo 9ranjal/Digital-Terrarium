@@ -820,6 +820,158 @@ body:has(.post-with-toc) .site-footer .wrapper {
   color: $hover;
 }
 
+/* -----------------------------
+   Review overlay (Letterboxd-style)
+   ----------------------------- */
+
+.review-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.review-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.review-overlay-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.review-overlay-content {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  max-width: 640px;
+  max-height: 85vh;
+  padding: 2rem;
+  z-index: 1;
+  transform: translateY(10px);
+  transition: transform 0.25s ease;
+}
+
+.review-overlay.is-active .review-overlay-content {
+  transform: translateY(0);
+}
+
+.review-overlay-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  background: none;
+  border: none;
+  color: rgba($fg, 0.4);
+  font-size: 1.75rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s ease;
+  z-index: 2;
+}
+
+.review-overlay-close:hover {
+  color: rgba($fg, 0.9);
+}
+
+.review-overlay-cover {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.review-overlay-cover img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
+}
+
+.review-overlay-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.review-overlay-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: rgba($fg, 0.96);
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.review-overlay-meta {
+  font-size: 0.92rem;
+  color: rgba($fg, 0.5);
+  margin: 0;
+}
+
+.review-overlay-rating {
+  font-size: 1rem;
+  color: rgba($fg, 0.65);
+  margin: 0.15rem 0 0 0;
+}
+
+.review-overlay-review {
+  font-size: 0.92rem;
+  color: rgba($fg, 0.7);
+  line-height: 1.65;
+  margin-top: 0.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba($fg, 0.1);
+}
+
+.review-overlay-review p {
+  margin: 0 0 0.75rem 0;
+}
+
+.review-overlay-review p:last-child {
+  margin-bottom: 0;
+}
+
+.review-text {
+  display: none;
+}
+
+.book-card[data-title] {
+  transition: transform 0.15s ease;
+}
+
+.book-card[data-title]:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 560px) {
+  .review-overlay-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .review-overlay-cover {
+    width: 150px;
+  }
+
+  .review-overlay-info {
+    text-align: center;
+    align-items: center;
+  }
+}
+
 /* Hide sidebar TOC on narrow screens, show inline instead */
 @media screen and (max-width: 960px) {
   .post-with-toc {

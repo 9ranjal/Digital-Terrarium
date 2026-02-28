@@ -15,7 +15,13 @@ layout: default
       <h2 class="section-label">2026</h2>
       <div class="book-cards">
         {% for album in music_2026 %}
-        <article class="book-card">
+        <article class="book-card"
+          data-title="{{ album.title | escape }}"
+          data-subtitle="{{ album.artist | escape }}"
+          data-year="{{ album.year }}"
+          data-cover="{{ album.cover | escape }}"
+          data-rating="{{ album.rating }}">
+          {% if album.review %}<span class="review-text">{{ album.review | escape }}</span>{% endif %}
           <div class="book-cover-wrap">
             {% if album.cover %}
             <img class="book-cover" src="{{ album.cover | escape }}" alt="" loading="lazy" />
@@ -38,4 +44,5 @@ layout: default
   {% endif %}
   {% endif %}
 
+  {% include review-modal.html %}
 </div>

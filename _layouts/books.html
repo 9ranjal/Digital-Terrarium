@@ -18,7 +18,13 @@ layout: default
       <h2 class="section-label">2026</h2>
     <div class="book-cards">
       {% for book in books_2026 %}
-      <article class="book-card">
+      <article class="book-card"
+        data-title="{{ book.title | escape }}"
+        data-subtitle="{{ book.author | escape }}"
+        data-year="{{ book.year }}"
+        data-cover="{{ book.cover | escape }}"
+        data-rating="{{ book.rating }}">
+        {% if book.review %}<span class="review-text">{{ book.review | escape }}</span>{% endif %}
         <div class="book-cover-wrap">
           {% if book.cover %}
           <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
@@ -50,7 +56,13 @@ layout: default
       <h2 class="section-label">2025</h2>
     <div class="book-cards">
       {% for book in books_2025 %}
-      <article class="book-card">
+      <article class="book-card"
+        data-title="{{ book.title | escape }}"
+        data-subtitle="{{ book.author | escape }}"
+        data-year="{{ book.year }}"
+        data-cover="{{ book.cover | escape }}"
+        data-rating="{{ book.rating }}">
+        {% if book.review %}<span class="review-text">{{ book.review | escape }}</span>{% endif %}
         <div class="book-cover-wrap">
           {% if book.cover %}
           <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
@@ -82,7 +94,13 @@ layout: default
       <h2 class="section-label">2024</h2>
     <div class="book-cards">
       {% for book in books_2024 %}
-      <article class="book-card">
+      <article class="book-card"
+        data-title="{{ book.title | escape }}"
+        data-subtitle="{{ book.author | escape }}"
+        data-year="{{ book.year }}"
+        data-cover="{{ book.cover | escape }}"
+        data-rating="{{ book.rating }}">
+        {% if book.review %}<span class="review-text">{{ book.review | escape }}</span>{% endif %}
         <div class="book-cover-wrap">
           {% if book.cover %}
           <img class="book-cover" src="{{ book.cover | escape }}" alt="" loading="lazy" />
@@ -110,4 +128,5 @@ layout: default
   </section>
   {% endif %}
 
+  {% include review-modal.html %}
 </div>

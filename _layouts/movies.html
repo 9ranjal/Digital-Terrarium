@@ -15,7 +15,12 @@ layout: default
       <h2 class="section-label">2026</h2>
       <div class="book-cards">
         {% for movie in movies_2026 %}
-        <article class="book-card">
+        <article class="book-card"
+          data-title="{{ movie.title | escape }}"
+          data-year="{{ movie.year }}"
+          data-cover="{{ movie.cover | escape }}"
+          data-rating="{{ movie.rating }}">
+          {% if movie.review %}<span class="review-text">{{ movie.review | escape }}</span>{% endif %}
           <div class="book-cover-wrap">
             {% if movie.cover %}
             <img class="book-cover" src="{{ movie.cover | escape }}" alt="" loading="lazy" />
@@ -38,4 +43,5 @@ layout: default
   {% endif %}
   {% endif %}
 
+  {% include review-modal.html %}
 </div>
