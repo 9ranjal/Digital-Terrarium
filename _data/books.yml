@@ -10,7 +10,14 @@
   rating: 4
   status: "read"
   year_group: "2026"
-  review: "Highlights: Clay, Evelyn, A Little Cloud, A Painful Case."
+  review: >
+    Highlights: Clay, Evelyn, A Little Cloud, A Painful Case.
+
+    It's interesting how the stories here serve to contrast the other. Araby
+    deals with childhood love, and Eveline immediately after considers the
+    bargains of adult relationships. Clay and A Little Cloud both deal with
+    people who failed to find partners but with differing paths to the same
+    lonely place. Wonder if this was intentional.
 
 
 - title: "Desire"
@@ -20,6 +27,8 @@
   rating: 4
   status: "read"
   year_group: "2026"
+  review: >
+    Whimsical, strange, and affirming. Strengthened my desire to read more Murakami.
 
 # ——— 2025 ———
 
@@ -30,6 +39,13 @@
   rating: 5
   status: "read"
   year_group: "2025"
+  review: >
+    Hard to imagine the depth of research and depth in general it'd have taken
+    to write this...fact/fiction, history/myth are all blended intoxicatingly
+    here. The prose can be hyper-realist and descriptive of all the minutiae of
+    medieval Mewar and then immediately veer to magical realism. The protagonist
+    is incredibly compelling as a tragic hero, and the central motif of the
+    book's title finds purchase again and again in ways big and small.
 
 - title: "The Old Man and the Sea"
   author: "Ernest Hemingway"
@@ -46,6 +62,12 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    The three (four) Musketeers are older and wearier, the promise of the
+    future has dulled and life has them at cross-purposes. This feels like a
+    swan song at times and I dread reading the last book(s) in the trilogy where
+    I'll have to actually bid farewell to Dumas' heroes - think I'll put it off
+    reading these for some time.
 
 - title: "Waiting for the Barbarians"
   author: "J.M. Coetzee"
@@ -54,6 +76,10 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Coetzee offers up a blistering critique of colonialism and the machinery of
+    a State. As with all Coetzee protagonists, the central character is
+    equal-parts pathos and incandescent redemptive humanity.
 
 - title: "The Three Musketeers (Musketeers Trilogy #1)"
   author: "Alexandre Dumas"
@@ -62,6 +88,24 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Reading this right after CoMC was interesting; while the plot here isn't
+    nearly as tightly constructed, the characters are all electric, unlike CoMC
+    where the Count is the keystone for every plot and intrigue. Here, the
+    central protagonist, D'Artagnan, doesn't even find mention in the novel's
+    name, and the characters are embedded as tiny cogs in the wheel of history.
+
+    The eponymous protagonists get their deserved plaudits but the cast of
+    supporting characters with the lackeys and the aristocrats help elevate the
+    novel even when the Musketeers are absent from the page. We're teased
+    several antagonists with the Cardinal and Rochefort before Milady assumes
+    her role as an agent of malice. In many ways, Milady isn't all that
+    different from the Musketeers (who despite their heroics are vain, lazy, and
+    debauched) - she possesses the same force of character that seems to bend
+    the world to her whims. If this is ever adapted decently for the screen,
+    it'll need someone singular to play her.
+
+    Excited to read the rest of the D'Artagnan romances.
 
 - title: "The Count of Monte Cristo"
   author: "Alexandre Dumas"
@@ -70,6 +114,21 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    "The sea is the cemetery of Chateau d'If."
+
+    Was nice to revisit an era where everything is binary, the heroes and
+    villains are just that, there's no grey morality and anti-heroes are not the
+    vogue (although maybe the Count is an anti-hero given the tragedies dealt by
+    his hand).
+
+    The Count is omniscient and omnipotent, and his machinations are delightful.
+    It strains incredulity at times but there's enough here to provoke the mind
+    of those with a philosophical bent. Dumas' reflections on fate and
+    providence elevate this from a mere revenge thriller (and the thrills are
+    aplenty) to a more profound treatise on the human condition.
+
+    "Wait and hope."
 
 - title: "On Earth We're Briefly Gorgeous"
   author: "Ocean Vuong"
@@ -78,6 +137,9 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Every sentence is replete with metaphors, similes, and analogies - a story
+    unto itself. Oppressively sad but ever so hopeful.
 
 - title: "No Longer at Ease (The African Trilogy, #3)"
   author: "Chinua Achebe"
@@ -86,6 +148,15 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Eschewing the brutal minimalism of Things Fall Apart, this is verbose. While
+    TFA felt like taking a sledgehammer to your sensibilities, No Longer At Ease
+    is scalpel like in its precision - constantly probing and unsettling.
+
+    Coincidentally, read this a couple of months after reading Coetzee's
+    Barbarians; interesting to see colonialism here from the lens of the
+    oppressed instead of the oppressor - ironically both ultimately bereft of
+    the humanity they seek to protect.
 
 - title: "Man's Search for Meaning"
   author: "Viktor E. Frankl"
@@ -94,6 +165,9 @@
   rating: 5
   status: "read"
   year_group: "2025"
+  review: >
+    Deeply human and affirming, leaves you feeling like you can wring water
+    from stone.
 
 - title: "A Long Walk to Freedom: 1918-1962 v. 1"
   author: "Nelson Mandela"
@@ -102,6 +176,9 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Mandela's retelling of his time in captivity at Robben Island is incredibly
+    uplifting, liable to give hope to even the most hapless soul.
 
 - title: "Normal People"
   author: "Sally Rooney"
@@ -110,6 +187,10 @@
   rating: 4
   status: "read"
   year_group: "2025"
+  review: >
+    Had my stomach tied up in knots at times. Some of the best depiction of
+    anxiety I've come across. Author has a rare gift for blending despair and
+    nerve-tingling giddiness, sometimes in a single sentence.
 
 - title: "Klopp: My Liverpool Romance"
   author: "Anthony Quinn"
@@ -118,6 +199,9 @@
   rating: 3
   status: "read"
   year_group: "2025"
+  review: >
+    The author's interleaving of Liverpool's Klopp era with his personal life
+    and the history of a city/people has a definitive charm.
 
 # ——— 2024 ———
 
