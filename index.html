@@ -11,16 +11,16 @@ layout: default
   {% if latest_post %}
   <section class="post-section recent">
     <div class="section-label">Recent</div>
-    <p class="section-explainer">Latest post.</p>
     <ul class="post-list">
       <li>
         <span class="post-meta">{{ latest_post.date | date: "%B %-d, %Y" }}</span>
         <a class="post-link" href="{{ latest_post.url | relative_url }}">{{ latest_post.title | escape }}</a>
       </li>
     </ul>
-    {% if latest_post.excerpt %}
+    {% assign excerpt_text = latest_post.content | strip_html | normalize_whitespace | split: "." | first | append: "." | truncate: 160 %}
+    {% if excerpt_text and excerpt_text != "" %}
     <p class="latest-excerpt">
-      {{ latest_post.excerpt | strip_html | truncate: 120 }}
+      {{ excerpt_text }}
       <a class="latest-readmore" href="{{ latest_post.url | relative_url }}">Keep reading →</a>
     </p>
     {% endif %}
@@ -34,7 +34,6 @@ layout: default
   {% if sorted_tags.size > 0 %}
   <section class="post-section">
     <div class="section-label">Topics</div>
-    <p class="section-explainer">Browse by tag.</p>
     <div class="topics">
       {% for t in sorted_tags %}
       {% assign tag_name = t[0] %}
@@ -47,22 +46,36 @@ layout: default
 
   <hr />
 
-  <!-- Categories: one explainer for the whole section -->
+  <!-- Categories -->
   <section class="post-section categories-section">
     <div class="section-label">Categories</div>
-    <p class="section-explainer">Posts grouped by category.</p>
 
-    {% assign project_posts = site.posts | where: "categories", "projects" %}
+    {% assign project_posts = site.posts | where: "categories", "projects" | sort: "date" | reverse %}
     {% if project_posts.size > 0 %}
+    {% assign aanae_post = project_posts | where: "title", "Aanae - Experiments with RAG" | first %}
+    {% assign babel_post = project_posts | where: "title", "Babel - Consensus as a Service" | first %}
+    {% assign proj_latest = project_posts | first %}
     <div class="category-block" id="projects">
       <a class="section-label section-label-link category-heading" href="{{ '/projects/' | relative_url }}">Projects/Work</a>
       <ul class="post-list">
-        {% for post in project_posts %}
+        {% if proj_latest and proj_latest.title != aanae_post.title and proj_latest.title != babel_post.title %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <span class="post-meta">{{ proj_latest.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ proj_latest.url | relative_url }}">{{ proj_latest.title | escape }}</a>
         </li>
-        {% endfor %}
+        {% endif %}
+        {% if aanae_post %}
+        <li>
+          <span class="post-meta">{{ aanae_post.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ aanae_post.url | relative_url }}">{{ aanae_post.title | escape }}</a>
+        </li>
+        {% endif %}
+        {% if babel_post %}
+        <li>
+          <span class="post-meta">{{ babel_post.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ babel_post.url | relative_url }}">{{ babel_post.title | escape }}</a>
+        </li>
+        {% endif %}
       </ul>
     </div>
     {% endif %}
@@ -88,17 +101,25 @@ layout: default
     </div>
     {% endif %}
 
-    {% assign training_posts = site.posts | where: "categories", "training" %}
+    {% assign training_posts = site.posts | where: "categories", "training" | sort: "date" | reverse %}
     {% if training_posts.size > 0 %}
+    {% assign bmc_post = training_posts | where: "title", "Basic Mountaineering Course @ NIMAS" | first %}
+    {% assign train_latest = training_posts | first %}
     <div class="category-block" id="training">
       <a class="section-label section-label-link category-heading" href="{{ '/training/' | relative_url }}">Training</a>
       <ul class="post-list">
-        {% for post in training_posts %}
+        {% if train_latest and train_latest.title != bmc_post.title %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <span class="post-meta">{{ train_latest.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ train_latest.url | relative_url }}">{{ train_latest.title | escape }}</a>
         </li>
-        {% endfor %}
+        {% endif %}
+        {% if bmc_post %}
+        <li>
+          <span class="post-meta">{{ bmc_post.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ bmc_post.url | relative_url }}">{{ bmc_post.title | escape }}</a>
+        </li>
+        {% endif %}
       </ul>
     </div>
     {% endif %}
@@ -107,7 +128,6 @@ layout: default
   <!-- Tableau: Books, Music, Movies -->
   <section class="post-section tableau-section" id="tableau">
     <div class="section-label">Tableau</div>
-    <p class="section-explainer">Books, music, and movies I've logged.</p>
     <div class="tableau-links">
       <a class="post-link" href="{{ '/books/' | relative_url }}">Books</a>
       <a class="post-link" href="{{ '/movies/' | relative_url }}">Movies</a>
@@ -120,7 +140,6 @@ layout: default
   <!-- All Articles (newest to oldest) -->
   <section class="post-section all-articles">
     <div class="section-label">All</div>
-    <p class="section-explainer">Full archive, newest first.</p>
     <ul class="post-list">
       {% for post in chronological_posts %}
       <li>

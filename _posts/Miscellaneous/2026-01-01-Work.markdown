@@ -8,7 +8,8 @@ tags: [Me]
 I graduated from **WBNUJS** in 2016. Some tidbits:
 - I was the last person on the general merit list.
 - I was debarred from my first law school exam (*Contracts I*). We were given the option of skipping classes but meeting the teacher later to adjust our attendance and allow us to meet the attendance cut-off. It didn't feel right to get attendance this way and I missed out by one class.
-- I was the first person in my batch to land a job (a firm run by alumni showed up for on-campus interviews ahead of *Day Zero*).
+- I couldn't bring myself to go through the rigor of moot courts, but enjoyed parliamentary debates (managed to get on the University's B team).
+- I was the first person in my batch to land a job.
 
 ---
 
@@ -17,7 +18,7 @@ I graduated from **WBNUJS** in 2016. Some tidbits:
 ### **Now — Independent Consulting**  
 *Nov 2024 – Present*
 
-I consult on **venture operations** and **AI implementation**.
+I consult on **venture operations** and **AI-enabled services**.
 
 Recent work includes:
 - Designing **automated systems for transactions execution** for an AI-native law firm  
@@ -35,7 +36,7 @@ Recent work includes:
   - real-time visibility  
   - cycle-time diagnostics  
   - bottleneck prediction for investors and internal stakeholders
-- **Late 2024:** After seeing a fund through its **full lifecycle** *(raise → deploy → manage → harvest)*, exited to pursue **independent, AI-first work**—self-funded learning and consulting focused on **data systems, workflows, and applied AI**.
+- **Late 2024:** After seeing a fund through its **full lifecycle** *(raise → deploy → manage → harvest)*, took a leap of faith and quit to continue learning about tech as a labour of love.
 
 ---
 

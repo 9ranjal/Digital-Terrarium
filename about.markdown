@@ -12,8 +12,7 @@ I currently consult on venture operations and AI-enabled services. I was previou
 A few links to explore:
 - Coding and other [Projects](/projects/)
 - [Creative Writing](/writing/)
-- [Training](/training/) logs and race reports 
-- Adventures in the [Mountains](/mountains/)
+- [Training](/training/) logs, race reports, treks, and expeditions
 - Record of [Music](/music/), [Books](/books/), and [Movies](/movies/)
 
 For how I use AI in my writing, please see [this post]({% link _posts/Miscellaneous/2024-01-01-how-i-use-ai.markdown %}).
