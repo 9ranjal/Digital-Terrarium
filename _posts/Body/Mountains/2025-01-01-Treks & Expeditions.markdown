@@ -3,7 +3,7 @@ layout: post
 title: "Treks & Expeditions"
 date: 2026-01-01
 tags: [mountaineering]
-categories: mountains
+categories: training
 ---
 
 Record of all Himalayan hikes and expeditions.

@@ -3,7 +3,7 @@ layout: post
 title: "Basic Mountaineering Course @ NIMAS"
 date: 2023-08-01
 tags: [mountaineering]
-categories: mountains
+categories: training
 ---
 
 

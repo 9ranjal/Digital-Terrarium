@@ -55,7 +55,7 @@ layout: default
     {% assign project_posts = site.posts | where: "categories", "projects" %}
     {% if project_posts.size > 0 %}
     <div class="category-block" id="projects">
-      <a class="section-label section-label-link category-heading" href="{{ '/projects/' | relative_url }}">Projects and Work</a>
+      <a class="section-label section-label-link category-heading" href="{{ '/projects/' | relative_url }}">Projects/Work</a>
       <ul class="post-list">
         {% for post in project_posts %}
         <li>
@@ -72,12 +72,18 @@ layout: default
     <div class="category-block" id="writing">
       <a class="section-label section-label-link category-heading" href="{{ '/writing/' | relative_url }}">Writing</a>
       <ul class="post-list">
-        {% for post in writing_posts %}
+        {% assign ss_posts = writing_posts | where: "subcategory", "short-stories" | sort: "date" | reverse %}
+        {% assign ss_latest = ss_posts | first %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% if ss_latest %}<span class="post-meta">{{ ss_latest.date | date: "%B %-d, %Y" }}</span>{% endif %}
+          <a class="post-link" href="{{ '/writing/short-stories/' | relative_url }}">Short Stories</a>
         </li>
-        {% endfor %}
+        {% assign pp_posts = writing_posts | where: "subcategory", "101-philosophy-problems" | sort: "date" | reverse %}
+        {% assign pp_latest = pp_posts | first %}
+        <li>
+          {% if pp_latest %}<span class="post-meta">{{ pp_latest.date | date: "%B %-d, %Y" }}</span>{% endif %}
+          <a class="post-link" href="{{ '/writing/101-philosophy-problems/' | relative_url }}">101 Philosophy Problems</a>
+        </li>
       </ul>
     </div>
     {% endif %}
@@ -88,21 +94,6 @@ layout: default
       <a class="section-label section-label-link category-heading" href="{{ '/training/' | relative_url }}">Training</a>
       <ul class="post-list">
         {% for post in training_posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    {% assign mountains_posts = site.posts | where: "categories", "mountains" %}
-    {% if mountains_posts.size > 0 %}
-    <div class="category-block" id="mountains">
-      <a class="section-label section-label-link category-heading" href="{{ '/mountains/' | relative_url }}">Mountains</a>
-      <ul class="post-list">
-        {% for post in mountains_posts %}
         <li>
           <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

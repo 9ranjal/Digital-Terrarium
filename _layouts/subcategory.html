@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="page subcategory-page">
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {% assign stripped_content = content | strip %}
+  {% if stripped_content != "" %}
+    <div class="subcategory-page-intro">
+      {{ content }}
+    </div>
+  {% endif %}
+
+  {%- assign filtered_posts = "" | split: "," -%}
+  {%- for post in site.posts -%}
+    {%- if post.subcategory == page.subcategory -%}
+      {%- assign cat_match = false -%}
+      {%- for c in post.categories -%}
+        {%- assign c_slug = c | slugify -%}
+        {%- if c_slug == page.parent_category -%}
+          {%- assign cat_match = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if cat_match -%}
+        {%- assign filtered_posts = filtered_posts | push: post -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign filtered_posts = filtered_posts | sort: "date" | reverse -%}
+
+  {% if filtered_posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in filtered_posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%d/%m/%y" }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts yet.</p>
+  {% endif %}
+</div>

@@ -453,6 +453,34 @@ hr {
 }
 
 /* -----------------------------
+   Sub-category pages
+   ----------------------------- */
+
+.subcategory-page-intro p {
+  font-size: 0.85rem;
+  color: rgba($fg, 0.55);
+  line-height: 1.6;
+}
+
+.subcategory-page .post-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2.5rem;
+}
+
+.subcategory-page .post-list > li {
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+  .subcategory-page .post-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------
    Books / Music / Movies: personal database (cards)
    ----------------------------- */
 

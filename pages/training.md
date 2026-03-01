@@ -3,7 +3,7 @@ layout: category
 title: Training
 category: training
 permalink: /training/
-description: "Training logs and race reports for running and cycling."
+description: "Training logs, race reports, treks, and expeditions."
 ---
 
-Training logs and race reports for running and cycling.
+Training logs, race reports, treks, and expeditions.
