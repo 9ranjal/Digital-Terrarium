@@ -1001,6 +1001,361 @@ body:has(.post-with-toc) .site-footer .wrapper {
   }
 }
 
+/* -----------------------------
+   Theme toggle button
+   ----------------------------- */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: rgba($fg, 0.45);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: rgba($fg, 0.85);
+  background: rgba($fg, 0.08);
+}
+
+.theme-toggle:focus-visible {
+  outline: 1.5px solid rgba($fg, 0.35);
+  outline-offset: 2px;
+}
+
+/* In dark mode: show sun, hide moon */
+.theme-icon--moon { display: none; }
+.theme-icon--sun  { display: block; }
+
+/* In light mode: show moon, hide sun */
+[data-theme="light"] .theme-icon--sun  { display: none; }
+[data-theme="light"] .theme-icon--moon { display: block; }
+
+/* -----------------------------
+   Light mode overrides (Flexoki light)
+   ----------------------------- */
+
+$light-bg: #FFFCF0;
+$light-fg: #100F0F;
+$light-muted: #6F6E69;
+$light-muted-2: #878580;
+$light-line: #E6E4D9;
+$light-line-2: #F2F0E5;
+$light-hover: #205EA6;
+$light-code-bg: #F2F0E5;
+
+[data-theme="light"] {
+  &, body {
+    background: $light-bg !important;
+    color: $light-fg !important;
+  }
+}
+
+[data-theme="light"] main.page-content,
+[data-theme="light"] .page-content .wrapper {
+  background: $light-bg;
+  color: $light-fg;
+}
+
+[data-theme="light"] a {
+  color: rgba($light-fg, 0.85);
+}
+
+[data-theme="light"] a:visited {
+  color: rgba($light-fg, 0.70);
+}
+
+[data-theme="light"] a:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .site-title {
+  color: rgba($light-fg, 0.90);
+}
+
+[data-theme="light"] .site-title:hover {
+  color: $light-fg;
+}
+
+[data-theme="light"] .theme-toggle {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  color: rgba($light-fg, 0.85);
+  background: rgba($light-fg, 0.08);
+}
+
+[data-theme="light"] .site-nav-simple .page-link {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .site-nav-simple .page-link:hover {
+  color: rgba($light-fg, 0.90);
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: rgba($light-fg, 0.92);
+}
+
+[data-theme="light"] .post-meta {
+  color: rgba($light-fg, 0.48);
+}
+
+[data-theme="light"] pre,
+[data-theme="light"] code {
+  background: $light-code-bg;
+}
+
+[data-theme="light"] blockquote {
+  border-left-color: $light-line;
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] hr {
+  border-top-color: rgba($light-fg, 0.14);
+}
+
+/* Homepage */
+[data-theme="light"] .home .post-section > .section-label,
+[data-theme="light"] .home .post-section > a.section-label-link:first-child {
+  color: rgba($light-fg, 0.75);
+}
+
+[data-theme="light"] .home .section-label {
+  color: rgba($light-fg, 0.68);
+}
+
+[data-theme="light"] .home .section-explainer {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .home .categories-section .category-heading {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .home a.section-label-link {
+  color: rgba($light-fg, 0.68);
+}
+
+[data-theme="light"] .home a.section-label-link:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .home .latest-title {
+  color: rgba($light-fg, 0.92);
+}
+
+[data-theme="light"] .home .latest-link {
+  color: rgba($light-fg, 0.88);
+}
+
+[data-theme="light"] .home .latest-link:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .home .latest-meta {
+  color: rgba($light-fg, 0.50);
+}
+
+[data-theme="light"] .home .latest-excerpt {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .home .latest-readmore:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .home .topics {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .home .topics a {
+  color: rgba($light-fg, 0.65);
+}
+
+[data-theme="light"] .home .topics a:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .home .post-meta {
+  color: rgba($light-fg, 0.42);
+}
+
+[data-theme="light"] .home .post-link {
+  color: rgba($light-fg, 0.85);
+}
+
+[data-theme="light"] .home .post-link:hover {
+  color: $light-hover;
+}
+
+/* Tag / category pages */
+[data-theme="light"] .page .post-meta {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .page .post-link {
+  color: rgba($light-fg, 0.82);
+}
+
+[data-theme="light"] .page .post-link:hover {
+  color: $light-hover;
+}
+
+/* Books / Music / Movies */
+[data-theme="light"] .page-books .section-label,
+[data-theme="light"] .page-music .section-label,
+[data-theme="light"] .page-movies .section-label {
+  color: rgba($light-fg, 0.68);
+}
+
+[data-theme="light"] .book-cover-wrap {
+  background: $light-line;
+}
+
+[data-theme="light"] .book-cover-placeholder {
+  color: rgba($light-fg, 0.30);
+  background: $light-line;
+}
+
+[data-theme="light"] .book-title a {
+  color: rgba($light-fg, 0.88);
+}
+
+[data-theme="light"] .book-title a:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .book-meta {
+  color: rgba($light-fg, 0.50);
+}
+
+[data-theme="light"] .book-rating {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .book-status {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .book-section-break {
+  border-top-color: rgba($light-fg, 0.12);
+}
+
+/* Footer */
+[data-theme="light"] .site-footer {
+  border-top-color: rgba($light-fg, 0.10);
+}
+
+[data-theme="light"] .site-footer .footer-name {
+  color: rgba($light-fg, 0.50);
+}
+
+[data-theme="light"] .site-footer .footer-legend {
+  color: rgba($light-fg, 0.38);
+}
+
+[data-theme="light"] .site-footer .social-sep {
+  color: rgba($light-fg, 0.30);
+}
+
+[data-theme="light"] .site-footer .footer-link {
+  color: rgba($light-fg, 0.50);
+}
+
+[data-theme="light"] .site-footer .footer-link:hover,
+[data-theme="light"] .site-footer .footer-link:focus-visible {
+  color: rgba($light-fg, 0.85);
+}
+
+/* TOC sidebar */
+[data-theme="light"] .toc-title {
+  color: rgba($light-fg, 0.82);
+}
+
+[data-theme="light"] .toc-num {
+  color: rgba($light-fg, 0.42);
+}
+
+[data-theme="light"] .toc-link {
+  color: rgba($light-fg, 0.60);
+}
+
+[data-theme="light"] .toc-link:hover {
+  color: rgba($light-fg, 0.88);
+}
+
+[data-theme="light"] .toc-toggle {
+  color: rgba($light-fg, 0.30);
+}
+
+[data-theme="light"] .toc-toggle:hover {
+  color: rgba($light-fg, 0.65);
+}
+
+[data-theme="light"] .toc-sublink {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .toc-sublink:hover {
+  color: $light-hover;
+}
+
+[data-theme="light"] .toc-sidebar {
+  border-bottom-color: rgba($light-fg, 0.10);
+}
+
+/* Review overlay */
+[data-theme="light"] .review-overlay-backdrop {
+  background: rgba(255, 252, 240, 0.88);
+}
+
+[data-theme="light"] .review-overlay-close {
+  color: rgba($light-fg, 0.35);
+}
+
+[data-theme="light"] .review-overlay-close:hover {
+  color: rgba($light-fg, 0.85);
+}
+
+[data-theme="light"] .review-overlay-title {
+  color: rgba($light-fg, 0.92);
+}
+
+[data-theme="light"] .review-overlay-meta {
+  color: rgba($light-fg, 0.45);
+}
+
+[data-theme="light"] .review-overlay-rating {
+  color: rgba($light-fg, 0.55);
+}
+
+[data-theme="light"] .review-overlay-review {
+  color: rgba($light-fg, 0.60);
+  border-top-color: rgba($light-fg, 0.10);
+}
+
+[data-theme="light"] .review-overlay-cover img {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
 /* Hide sidebar TOC on narrow screens, show inline instead */
 @media screen and (max-width: 960px) {
   .post-with-toc {
