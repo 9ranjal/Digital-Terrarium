@@ -607,97 +607,71 @@ hr {
 }
 
 /* -----------------------------
-   Footer (condensed, icon + text)
+   Footer (split colophon)
    ----------------------------- */
 
 .site-footer {
-  margin-top: 4rem;
-  padding: 2rem 0;
-  border-top: 1px solid rgba($fg, 0.10);
-  font-size: 0.95rem;
-  width: 100%;
+  margin-top: 5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba($fg, 0.08);
 }
 
 .site-footer .footer-wrapper {
-  max-width: 100%;
+  max-width: $content-width;
 }
 
-.site-footer .footer-inner {
+.site-footer .footer-colophon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.25rem;
-  width: 100%;
-}
-
-.site-footer .footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.site-footer .footer-name {
-  color: rgba($fg, 0.55);
-}
-
-.site-footer .footer-legend {
-  display: block;
   font-size: 0.8rem;
-  color: rgba($fg, 0.4);
   letter-spacing: 0.02em;
 }
 
-.site-footer .footer-right {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
-  overflow: visible;
+.site-footer .footer-year {
+  color: rgba($fg, 0.25);
 }
 
-.site-footer .social-sep {
-  color: rgba($fg, 0.35);
-  margin: 0 0.15rem;
+.site-footer .footer-tagline {
+  color: rgba($fg, 0.30);
+}
+
+.site-footer .footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .site-footer .footer-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: rgba($fg, 0.55);
-  text-decoration: none;
-  transition: color 0.15s ease;
-  overflow: visible;
-}
-
-.site-footer .footer-link:hover,
-.site-footer .footer-link:focus-visible {
-  color: rgba($fg, 0.90);
-  outline: none;
-}
-
-.site-footer .social-icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 18px;
-  height: 18px;
-  line-height: 0;
-  flex: 0 0 18px;
-  color: currentColor;
-  overflow: visible;
-  flex-shrink: 0;
+  color: rgba($fg, 0.30);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.site-footer .social-icon svg {
-  width: 16px;
-  height: 16px;
-  max-width: 16px;
-  max-height: 16px;
+.site-footer .footer-link svg {
+  width: 15px;
+  height: 15px;
   display: block;
   fill: currentColor;
-  overflow: visible;
-  flex-shrink: 0;
+}
+
+.site-footer .footer-link:hover {
+  color: rgba($fg, 0.80);
+}
+
+.site-footer .footer-link:focus-visible {
+  outline: 1.5px solid rgba($fg, 0.30);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 400px) {
+  .site-footer .footer-tagline {
+    display: none;
+  }
 }
 
 /* -----------------------------
@@ -1261,28 +1235,23 @@ $light-code-bg: #F2F0E5;
 
 /* Footer */
 [data-theme="light"] .site-footer {
-  border-top-color: rgba($light-fg, 0.10);
+  border-top-color: rgba($light-fg, 0.08);
 }
 
-[data-theme="light"] .site-footer .footer-name {
-  color: rgba($light-fg, 0.50);
+[data-theme="light"] .site-footer .footer-year {
+  color: rgba($light-fg, 0.22);
 }
 
-[data-theme="light"] .site-footer .footer-legend {
-  color: rgba($light-fg, 0.38);
-}
-
-[data-theme="light"] .site-footer .social-sep {
-  color: rgba($light-fg, 0.30);
+[data-theme="light"] .site-footer .footer-tagline {
+  color: rgba($light-fg, 0.28);
 }
 
 [data-theme="light"] .site-footer .footer-link {
-  color: rgba($light-fg, 0.50);
+  color: rgba($light-fg, 0.28);
 }
 
-[data-theme="light"] .site-footer .footer-link:hover,
-[data-theme="light"] .site-footer .footer-link:focus-visible {
-  color: rgba($light-fg, 0.85);
+[data-theme="light"] .site-footer .footer-link:hover {
+  color: rgba($light-fg, 0.75);
 }
 
 /* TOC sidebar */
