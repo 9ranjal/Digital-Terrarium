@@ -55,10 +55,11 @@ new_blocks = blocks.map do |block|
 
   if url
     puts "  → #{url}"
-    if block =~ /^(\s*cover:\s*).*$/
-      block.sub!(/^(\s*cover:\s*).*$/, "\\1\"#{url}\"")
+    if block =~ /^\s*cover:\s*(?:\S|$)/
+      # Cover key exists — replace value (handles: "url", empty, or URL on next line)
+      block.sub!(/^(\s*cover:)\s*(?:"[^"]*")?[ \t]*(?:\n[ \t]*"[^"]*")?[ \t]*\n?/m, "\\1 \"#{url}\"\n")
     else
-      block.sub!(/^(  year_group:.*)$/, "  cover: \"#{url}\"\n\\1")
+      block.sub!(/^(  year_group:.*)$/m, "  cover: \"#{url}\"\n\\1")
     end
   else
     puts "  ✗ not found"
