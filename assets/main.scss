@@ -227,6 +227,31 @@ hr {
   margin: 40px 0;
 }
 
+/* Post content: markdown tables */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+
+.post-content th,
+.post-content td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 1px solid $line;
+}
+
+.post-content th {
+  font-weight: 600;
+  color: rgba($fg, 0.9);
+  background: rgba($fg, 0.06);
+}
+
+.post-content td {
+  color: rgba($fg, 0.85);
+}
+
 /* -----------------------------
    Homepage blocks
    ----------------------------- */
@@ -1104,6 +1129,20 @@ $light-code-bg: #F2F0E5;
 
 [data-theme="light"] hr {
   border-top-color: rgba($light-fg, 0.14);
+}
+
+[data-theme="light"] .post-content th,
+[data-theme="light"] .post-content td {
+  border-color: $light-line;
+}
+
+[data-theme="light"] .post-content th {
+  color: rgba($light-fg, 0.88);
+  background: rgba($light-fg, 0.05);
+}
+
+[data-theme="light"] .post-content td {
+  color: rgba($light-fg, 0.82);
 }
 
 /* Homepage */
