@@ -31,7 +31,8 @@ blocks = content.split(/\n(?=- title:)/)
 new_blocks = blocks.map do |block|
   next block unless block.strip.start_with?("- title:")
 
-  has_cover = block.include?("cover:")
+  # Treat as "has cover" only when it's a non-empty URL value
+  has_cover = block.match?(/^\s*cover:\s*"[^"]+"\s*$/m)
   skip = has_cover && !refresh
   if skip
     block

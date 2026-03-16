@@ -3,6 +3,16 @@
 
 # ——— 2026 ———
 
+- title: "Into Thin Air"
+  author: "Jon Krakauer"
+  cover: "https://covers.openlibrary.org/b/id/241603-M.jpg"
+  year: 1997
+  rating: 4
+  status: "read"
+  year_group: "2026"
+  review: >
+    Compelling post-mortem of the 1996 Everest disaster. It's a pity that matters are only worse now after all these years.
+
 - title: "Dubliners"
   author: "James Joyce"
   year: 1914
@@ -18,7 +28,6 @@
     bargains of adult relationships. Clay and A Little Cloud both deal with
     people who failed to find partners but with differing paths to the same
     lonely place. Wonder if this was intentional.
-
 
 - title: "Desire"
   author: "Haruki Murakami"
