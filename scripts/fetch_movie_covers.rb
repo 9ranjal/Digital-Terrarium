@@ -57,7 +57,8 @@ new_blocks = blocks.map do |block|
     puts "  → #{url}"
     if block =~ /^\s*cover:\s*(?:\S|$)/
       # Cover key exists — replace value (handles: "url", empty, or URL on next line)
-      block.sub!(/^(\s*cover:)\s*(?:"[^"]*")?[ \t]*(?:\n[ \t]*"[^"]*")?[ \t]*\n?/m, "\\1 \"#{url}\"\n")
+      # Use [ \t]* and explicit \n to avoid consuming next line's indent
+      block.sub!(/^(\s*cover:)(?:[ \t]*(?:"[^"]*")?[ \t]*(?:\n[ \t]*"[^"]*")?|[ \t]*\n)/m, "\\1 \"#{url}\"\n")
     else
       block.sub!(/^(  year_group:.*)$/m, "  cover: \"#{url}\"\n\\1")
     end
