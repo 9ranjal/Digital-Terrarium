@@ -9,8 +9,7 @@
   cover: "https://image.tmdb.org/t/p/w500/cWApyVKSEQkpLDxBpU5XrfCoUB1.jpg"
   year_group: "2026"
   review: >
-    There's a charm and innocence here that almost functions as sleight of hand as it effectively disguises the larger themes at play. 
-    Lots to be said about the humour and innocence at the heart of Boong - this is its beating heart, but the movie finds its true purpose in managing to take a self-contained story of a son looking for his father and manages to tell the story of an entire diaspora in Manipur. 
+    The small-town charm and childhood innocence portrayed serve as sleight of hand as the movie manages to take a self-contained story of a son looking for his father and use it to tell the story of an entire diaspora in Manipur. 
 
 - title: "Civil War"
   year: 2024
@@ -267,3 +266,11 @@
   year_group: "2026"
   review: >
     Manages to turn an entire genre on its head while remaining self-referential and campy.
+
+- title: "Good Fortune"
+  year: 2025
+  rating: "3/5"
+  cover: "https://image.tmdb.org/t/p/w500/rywxUbd4zvHiRP7nOHeDzuQSLIZ.jpg"
+  year_group: "2026"
+  review: >
+    Paper-thin plot that's saved by the good graces of its immensely likeable cast.
