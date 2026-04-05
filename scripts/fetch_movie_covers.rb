@@ -20,15 +20,11 @@ BASE_IMG    = "https://image.tmdb.org/t/p/w500"
 
 abort "Missing TMDB_API_KEY env var and no default key" if API_KEY.to_s.empty?
 
-HTTP = Net::HTTP.new("api.themoviedb.org", 443).tap do |h|
-  h.use_ssl = true
-  h.start
-end
-
 def fetch_poster(title, year = nil)
   params = { "api_key" => API_KEY, "query" => title }
   params["year"] = year.to_s if year
-  res = HTTP.get("/3/search/movie?#{URI.encode_www_form(params)}")
+  uri = URI("https://api.themoviedb.org/3/search/movie?#{URI.encode_www_form(params)}")
+  res = Net::HTTP.get_response(uri)
   return nil unless res.is_a?(Net::HTTPSuccess)
 
   data = JSON.parse(res.body)
@@ -62,7 +58,7 @@ new_blocks = blocks.map do |block|
     if block =~ /^\s*cover:\s*(?:\S|$)/
       # Cover key exists — replace value (handles: "url", empty, or URL on next line)
       # Use [ \t]* and explicit \n to avoid consuming next line's indent
-      block.sub!(/^(\s*cover:)(?:[ \t]*(?:"[^"]*")?[ \t]*(?:\n[ \t]*"[^"]*")?|[ \t]*\n)/m, "\\1 \"#{url}\"\n")
+      block.sub!(/^(\s*cover:)[ \t]*(?:"[^"]*")?[ \t]*\n/, "\\1 \"#{url}\"\n")
     else
       block.sub!(/^(  year_group:.*)$/m, "  cover: \"#{url}\"\n\\1")
     end
