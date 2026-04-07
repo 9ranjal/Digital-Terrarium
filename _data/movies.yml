@@ -2,6 +2,28 @@
 # Covers: run ruby scripts/fetch_movie_covers.rb to fill missing (uses TMDB API)
 
 # ——— 2026 ———
+- title: "Crime 101"
+  year: 2026
+  rating: "2.5/5"
+  cover: "https://image.tmdb.org/t/p/w500/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg"
+  year_group: "2026"
+  review: Like Heat but sadly tepid.
+
+- title: "Project Hail Mary"
+  year: 2026
+  rating: "3/5"
+  cover: "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg"
+  year_group: "2026"
+  review: >
+    Carried HARD by Ryan Gosling. Visual spectacle. RG's dynamic with Rocky is the highlight but even this feels as if cooked in a lab by a suit who watched Baby Yoda.
+
+- title: "Ready or Not 2: Here I Come"
+  year: 2026
+  rating: "3.25/5"
+  cover: "https://image.tmdb.org/t/p/w500/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg"
+  year_group: "2026"
+  review: >
+    Doesn't have the verve of the original but Samara Weaving remains a joy to watch.
 
 - title: "Boong"
   year: 2024
@@ -282,18 +304,3 @@
   year_group: "2026"
   review: >
     The subject matter seems almost milquetoast in the context of today's redpilled world, but it's entertaining to watch LT at work disarming his subjects with genuine interest in their world view and getting them to trip over their circular reasoning.
-
-- title: "Crime 101"
-  year: 2026
-  rating: "2.5/5"
-  cover: "https://image.tmdb.org/t/p/w500/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg"
-  year_group: "2026"
-  review: Like Heat but sadly tepid.
-
-- title: "Project Hail Mary"
-  year: 2026
-  rating: "3/5"
-  cover: "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg"
-  year_group: "2026"
-  review: >
-    Carried HARD by Ryan Gosling. Visual spectacle. RG's dynamic with Rocky is the highlight but even this feels as if cooked in a lab by a suit who watched Baby Yoda.
