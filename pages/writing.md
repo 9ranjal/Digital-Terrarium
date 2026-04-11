@@ -20,7 +20,7 @@ description: "Essays, short stories, and other creative writing."
   <ul class="post-list">
     <li>
       {% if ss_latest %}<span class="post-meta">{{ ss_latest.date | date: "%B %-d, %Y" }}</span>{% endif %}
-      <a class="post-link" href="{{ '/writing/short-stories/' | relative_url }}">Short Stories</a>
+      <a class="post-link" href="{{ '/writing/short-stories/' | relative_url }}">Short Stories and Essays</a>
     </li>
     <li>
       {% if pp_latest %}<span class="post-meta">{{ pp_latest.date | date: "%B %-d, %Y" }}</span>{% endif %}

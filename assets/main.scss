@@ -506,6 +506,42 @@ hr {
 }
 
 /* -----------------------------
+   Two-column writing page (Short Stories & Essays)
+   ----------------------------- */
+
+.two-col-writing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+  margin-top: 1.5rem;
+}
+
+.two-col-writing .post-list {
+  grid-template-columns: 1fr;
+}
+
+.two-col-writing .post-list > li {
+  grid-template-columns: 75px 1fr;
+  column-gap: 12px;
+}
+
+.writing-col-heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba($fg, 0.45);
+  margin: 0 0 1rem 0;
+}
+
+@media (max-width: 560px) {
+  .two-col-writing {
+    grid-template-columns: 1fr;
+    gap: 2rem 0;
+  }
+}
+
+/* -----------------------------
    Books / Music / Movies: personal database (cards)
    ----------------------------- */
 
@@ -1324,6 +1360,10 @@ $light-code-bg: #F2F0E5;
 
 [data-theme="light"] .toc-sublink:hover {
   color: $light-hover;
+}
+
+[data-theme="light"] .writing-col-heading {
+  color: rgba($light-fg, 0.40);
 }
 
 [data-theme="light"] .toc-sidebar {

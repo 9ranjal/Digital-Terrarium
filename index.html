@@ -89,7 +89,7 @@ layout: default
         {% assign ss_latest = ss_posts | first %}
         <li>
           {% if ss_latest %}<span class="post-meta">{{ ss_latest.date | date: "%B %-d, %Y" }}</span>{% endif %}
-          <a class="post-link" href="{{ '/writing/short-stories/' | relative_url }}">Short Stories</a>
+          <a class="post-link" href="{{ '/writing/short-stories/' | relative_url }}">Short Stories and Essays</a>
         </li>
         {% assign pp_posts = writing_posts | where: "subcategory", "101-philosophy-problems" | sort: "date" | reverse %}
         {% assign pp_latest = pp_posts | first %}
