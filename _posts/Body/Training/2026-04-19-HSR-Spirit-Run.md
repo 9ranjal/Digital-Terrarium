@@ -14,6 +14,7 @@ categories: training
 * **Time:** 1:03'24
 
 ### Goals
+
 | Goal | Description    | Completed? |
 | ---- | -------------- | ---------- |
 | A    | Sub 55 minutes | No         |
@@ -33,6 +34,7 @@ categories: training
 |8|6:41/km|
 |9|6:19/km|
 |10|6:43/km|
+
 ## Training/Pre-Race
 
 It's been a month since my NICE Road 10K and I wanted to test my legs after another month of training under my belt (shoes?). Put in a decent block of training over the last month with 3 sessions on the track (mix of tempo, interval, and V02 max) and consistent strength training throughout. Was feeling confident going into this race and thought sub-55 min was within my grasp as a reach goal.
