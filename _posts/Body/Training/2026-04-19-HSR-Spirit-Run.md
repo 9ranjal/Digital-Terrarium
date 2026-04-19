@@ -35,7 +35,7 @@ categories: training
 |9|6:19/km|
 |10|6:43/km|
 
-## Training/Pre-Race
+### Training/Pre-Race
 
 It's been a month since my NICE Road 10K and I wanted to test my legs after another month of training under my belt (shoes?). Put in a decent block of training over the last month with 3 sessions on the track (mix of tempo, interval, and V02 max) and consistent strength training throughout. Was feeling confident going into this race and thought sub-55 min was within my grasp as a reach goal.
  
@@ -50,6 +50,7 @@ My race strategy was to start at a somewhat comfortable 6:00 min/km pace and pus
 I maintained an average pace of 6:15 min/km for the remainder of the race. I didn't slow down majorly on any of the uphill sections but conversely didn't have the legs to push on the downslopes. There were also only two aid stations on the course (with only water bottles and no food or electrolytes) so I wasn't able to hydrate as I'd liked. The biggest factor however was the temperature and humidity which had become punishing at this point. 
 
 I reached the finish line and noticed my GPS showed only 9K. I continued outside the race course and jogged the last 1K to get my total distance to an even 10K. Consequently, even my fall-back goal of sub-60 min proved to be beyond my self today. 
+
 ### Post-race
 
 I realised that I've built top-end speed and could conceivably get close to a 25 min 5K within a month or two - this is largely a consequence of my interval training and V02 max sessions on the track. However, I've largely neglected threshold/tempo work and that proved to be my undoing today. 
