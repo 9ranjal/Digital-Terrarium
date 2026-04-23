@@ -236,7 +236,9 @@ Require:
 - Clear boundaries on what the model can access.
 
 ---
-## Conclusion and TL;DR Checklist
+## Conclusion 
+
+Keep the old questions, but add the new ones as well. 
 
 The old questions were:
 - **What do you own?** (IP chain of title, codebase, patents)
@@ -253,20 +255,3 @@ The new questions are:
   Gross margin at 2x/3x/5x token pricing, heavy-user tail, billing lag, and cash exposure.
 - **Can the system ship safely as models change?**  
   Evals, drift monitoring, rollback discipline, and time-to-adopt new models without breaking SLAs or compliance.
-
-### Checklist for Every Deal
-
-#### Financial
-- **Quality of Earnings:** Rebuild EBITDA without provider credits, subsidised model pricing, under-spent eval/label costs, and aggressive capitalisation of “AI development”.
-- **Token-cost sensitivity:** Show gross margin at **2x / 3x / 5x** model pricing. Include the heavy-user tail.
-- **Customer-level margins:** Break out gross margin by customer and by cohort. Flag negative-margin accounts.
-- **Working capital stress:** Map usage spikes to billing cycles. Show exposure when customers pay late and model providers bill on time.
-- **Compute commitments:** List cloud minimum spends, GPU leases, penalties, and any off–balance sheet commitments.
-- **Tax exposure on compute:** Check **GST/VAT** on cross-border API/compute, withholding on foreign vendors, and transfer pricing where group entities sit between buyer and provider.
-- **Cost controls in production:** Show what is already live: caching, routing, context trimming, distillation, hybrid/self-hosting.
-
-#### Legal
-- **Data rights:** Produce chain of title for training and fine-tuning data. Include licenses, consent, transferability, and exclusivity.
-- **Market access:** Show readiness for **EU AI Act (general application Aug 2026)** and disclosure regimes such as **California AB 2013** where relevant.
-- **Fine-tuning ownership:** Confirm who owns fine-tuned weights/derivatives and what the model-provider terms restrict.
-- **LLM security:** Controls for prompt injection, data leakage, logging, and incident response.
