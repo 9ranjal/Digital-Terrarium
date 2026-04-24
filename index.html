@@ -5,7 +5,14 @@ layout: default
 <div class="home">
 
   {% assign chronological_posts = site.posts | sort: "date" | reverse %}
-  {% assign latest_post = chronological_posts | first %}
+  {% assign latest_post = nil %}
+  {% for post in chronological_posts %}
+    {% unless latest_post %}
+      {% unless post.tags contains 'running' or post.tags contains 'races' or post.tags contains 'cycling' or post.tags contains 'mountaineering' %}
+        {% assign latest_post = post %}
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
 
   <!-- Recent (minimal: latest post + short excerpt) -->
   {% if latest_post %}

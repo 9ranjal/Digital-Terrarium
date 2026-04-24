@@ -6,12 +6,17 @@ tags: [cycling, running, races]
 categories: training
 ---
 
-Update this annually for a record of my races. 
+Update this annually for a record of my races.
 
 The goal is to be intentional about logging race reports. Please see: [MC Cycling's blog](https://mccyclingdiary.blogspot.com/) - an excellent compendium from one of BLR's best ultracyclists.
 
-## 2026
-- [Tata Mumbai Marathon]({% post_url Training/2026-01-18-Tata-Mumbai-Marathon-2026 %})
+{% assign race_posts = site.tags['races'] | sort: 'date' | reverse %}{% assign logged_years = "" | split: "" %}{% for post in race_posts %}{% unless post.url == page.url %}{% assign yr = post.date | date: "%Y" %}{% unless logged_years contains yr %}{% assign logged_years = logged_years | push: yr %}{% endunless %}{% endunless %}{% endfor %}
+{% for yr in logged_years %}
+
+## {{ yr }}
+{% for post in race_posts %}{% unless post.url == page.url %}{% assign post_yr = post.date | date: "%Y" %}{% if post_yr == yr %}- [{{ post.title }}]({{ post.url | relative_url }})
+{% endif %}{% endunless %}{% endfor %}
+{% endfor %}
 
 ## 2025
 - Kodagu Half Marathon
