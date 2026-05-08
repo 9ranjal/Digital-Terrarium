@@ -2,7 +2,7 @@
 layout: post
 title: "This Website"
 date: 2023-12-01
-tags: [FOSS, data, experiments]
+tags: [data, experiments]
 categories: projects
 ---
 
