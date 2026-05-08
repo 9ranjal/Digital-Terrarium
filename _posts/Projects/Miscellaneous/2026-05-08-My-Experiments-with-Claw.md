@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Experiments with Claw"
+title: "My Experiments with Claw - #1"
 date: 2026-05-08
 tags: [AI, experiments]
 categories: projects
