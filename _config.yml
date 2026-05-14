@@ -30,6 +30,8 @@ github_username: 9ranjal
 linkedin_username: 9ranjal
 bsky_url: "https://bsky.app/profile/9ranjal.bsky.social"
 
+google_analytics: G-JJXGJGLJR1
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
