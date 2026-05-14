@@ -3,6 +3,7 @@ layout: post
 title: "Work"
 date: 2025-12-31
 tags: [Me]
+description: "Pranjal Singh's work history — Sequoia Capital, AZB & Partners, Uber India, and current consulting on venture operations and AI-enabled services."
 ---
 
 I graduated from **WBNUJS** in 2016. Some tidbits:

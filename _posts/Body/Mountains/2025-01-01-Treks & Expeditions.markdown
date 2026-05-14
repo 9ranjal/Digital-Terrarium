@@ -4,6 +4,7 @@ title: "Treks & Expeditions"
 date: 2026-01-01
 tags: [mountaineering]
 categories: training
+description: "A record of Pranjal Singh's treks and mountaineering expeditions."
 ---
 
 Record of all Himalayan hikes and expeditions.

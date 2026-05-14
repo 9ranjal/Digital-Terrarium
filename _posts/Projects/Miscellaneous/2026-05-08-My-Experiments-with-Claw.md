@@ -4,6 +4,7 @@ title: "My Experiments with Claw - #1"
 date: 2026-05-08
 tags: [AI, experiments, data]
 categories: projects
+description: "How Pranjal Singh set up a personal knowledge pipeline using OpenClaw — ingesting articles and YouTube videos into structured Obsidian notes via Telegram."
 ---
 
 

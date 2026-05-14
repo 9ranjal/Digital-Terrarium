@@ -5,6 +5,7 @@ date: 2026-04-01
 tags: [philosophy]
 categories: writing
 subcategory: 101-philosophy-problems
+description: "Pranjal Singh on the Turtle problem — a philosophy puzzle about fairness, bargaining, and what it means to keep a promise."
 ---
 
 ## Problem Synopsis

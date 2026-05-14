@@ -3,6 +3,7 @@ layout: post
 title: "How I Use AI"
 tags: [Me]
 date: 2024-01-01
+description: "How Pranjal Singh uses AI in his work — where it helps, where it doesn't, and the principles that guide his use of LLMs in writing and coding."
 ---
 
 ## Where I Use AI

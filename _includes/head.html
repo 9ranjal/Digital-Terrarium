@@ -17,24 +17,43 @@
   {%- endif -%}
   {%- comment -%} JSON-LD structured data: WebSite helps Google show sitelinks; Person for profile/author {%- endcomment -%}
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ site.url }}{{ site.baseurl }}/",
-    "description": "{{ site.description | strip_html | escape }}",
-    "publisher": {
-      "@type": "Person",
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
       "name": "{{ site.title | escape }}",
       "url": "{{ site.url }}{{ site.baseurl }}/",
+      "description": "{{ site.description | strip_html | escape }}"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pranjal Singh",
+      "url": "{{ site.url }}{{ site.baseurl }}/",
       "image": "{{ site.url }}{{ site.baseurl }}{{ site.logo | default: '/assets/images/profile-torso.png' }}",
+      "jobTitle": "Product and GTM",
+      "description": "Pranjal Singh is a lawyer-technologist working at the intersection of AI, legal, and venture. He works on product and go-to-market for AI companies, and has previously worked at Sequoia Capital.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "Sequoia Capital"
+        },
+        {
+          "@type": "Organization",
+          "name": "WBNUJS"
+        }
+      ],
       "sameAs": [
         "https://github.com/{{ site.github_username | default: '9ranjal' }}",
         "https://www.linkedin.com/in/{{ site.linkedin_username | default: '9ranjal' }}"
-        {%- if site.bsky_url -%},"{{ site.bsky_url }}"{%- endif -%}
+        {%- if site.twitter_username -%},"https://x.com/{{ site.twitter_username }}"{%- endif -%}
       ]
     }
-  }
+  ]
   </script>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';

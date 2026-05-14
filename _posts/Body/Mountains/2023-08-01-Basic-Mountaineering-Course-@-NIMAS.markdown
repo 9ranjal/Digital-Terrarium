@@ -4,6 +4,7 @@ title: "Basic Mountaineering Course @ NIMAS"
 date: 2023-08-01
 tags: [mountaineering]
 categories: training
+description: "Journal entries from Pranjal Singh's Basic Mountaineering Course at NIMAS — a personal account of ennui, cold sleeping bags, and the mountains."
 ---
 
 

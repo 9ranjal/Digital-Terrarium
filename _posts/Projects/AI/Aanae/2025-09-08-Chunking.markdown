@@ -3,6 +3,7 @@ layout: post
 title: "Chunking"
 date: 2025-09-08
 tags: [AI, RAG, LLMs, data, Aanae]
+description: "Chunking strategies for RAG pipelines — how Aanae splits documents to preserve semantic coherence and improve retrieval precision."
 ---
 
 TL;DR:
