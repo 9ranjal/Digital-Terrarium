@@ -3,14 +3,47 @@
 
 # ——— 2026 ———
 
+- title: "AEnima"
+  artist: "Tool"
+  cover: "https://coverartarchive.org/release/ebaae452-331d-4cf5-b0ae-29f00722dfef/front-500"
+  year: 1996
+  rating:
+  year_group: "2026"
+
+- title: "Koi No Yokan"
+  artist: "Deftones"
+  cover: "https://coverartarchive.org/release/37812e79-96ee-4401-a067-62ca14c00750/front-500"
+  year: 2012
+  rating:
+  year_group: "2026"
+
+- title: "And Nothing Hurt"
+  artist: "Spiritualized"
+  cover: "https://coverartarchive.org/release-group/bd913f09-b4bd-4d2f-a5ad-2c2d01419e23/front-500"
+  year: 2018
+  rating:
+  year_group: "2026"
+
+- title: "Hex; or Printing in the Infernal Method"
+  artist: "Earth"
+  cover: "https://coverartarchive.org/release/dab4734d-5358-494f-9e2f-9f0fffa1c4a7/front-500"
+  year: 2005
+  rating:
+  year_group: "2026"
+
+- title: "Summer in My Veins"
+  artist: "I Am a Lake of Burning Orchids"
+  cover: "https://coverartarchive.org/release/3accfb78-e231-4ebf-a8eb-f40ba0ecc8a9/front-500"
+  year: 2014
+  rating:
+  year_group: "2026"
+
 - title: "No Pussyfooting"
   artist: "Brian Eno & Robert Fripp"
   year: 1973
   cover: "https://coverartarchive.org/release/b72e3d2a-1704-479d-82dc-d0158f1d2c09/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "Alive 2007"
   artist: "Daft Punk"
@@ -19,16 +52,12 @@
   rating: 5
   year_group: "2026"
 
-
-
 - title: "Fashion Week (Instrumentals)"
   artist: "Death Grips"
   year: 2015
   cover: "https://coverartarchive.org/release/1b50a49d-b05b-4163-902a-3f850c93feca/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "niggas on the moon"
   artist: "Death Grips"
@@ -37,16 +66,12 @@
   rating:
   year_group: "2026"
 
-
-
 - title: "White Pony"
   artist: "Deftones"
   year: 2000
   cover: "https://coverartarchive.org/release/a30f099b-2632-44a4-9527-e6b7c12c672e/front-500"
   rating: 4
   year_group: "2026"
-
-
 
 - title: "Innovator"
   artist: "Derrick May"
@@ -55,16 +80,12 @@
   rating:
   year_group: "2026"
 
-
-
 - title: "Sleep"
   artist: "DJ Olive"
   year: 2001
   cover: "https://coverartarchive.org/release/cd200b3a-b625-4b7e-b159-3848e558068a/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "Aviator"
   artist: "Funker Vogt"
@@ -73,16 +94,12 @@
   rating:
   year_group: "2026"
 
-
-
 - title: "Lift Your Skinny Fists Like Antennas to Heaven"
   artist: "Godspeed You! Black Emperor"
   year: 2000
   cover: "https://coverartarchive.org/release/e3334c4e-9612-43a2-923b-27e33acbd705/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "Honor Killed The Samurai"
   artist: "Ka"
@@ -91,16 +108,12 @@
   rating:
   year_group: "2026"
 
-
-
 - title: "The Fat of the Land"
   artist: "The Prodigy"
   year: 1997
   cover: "https://coverartarchive.org/release/a474b6b8-ad1e-4ffa-8da2-b6baea835308/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "In Times New Roman..."
   artist: "Queens of the Stone Age"
@@ -109,16 +122,12 @@
   rating:
   year_group: "2026"
 
-
-
 - title: "Diskoding"
   artist: "Siriusmo"
   year: 2009
   cover: "https://coverartarchive.org/release-group/40bf13d1-8be0-3aa2-ac8c-00305ad66938/front-500"
   rating:
   year_group: "2026"
-
-
 
 - title: "Dubnobasswithmyheadman"
   artist: "Underworld"

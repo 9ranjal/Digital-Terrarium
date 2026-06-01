@@ -9,6 +9,14 @@ require "uri"
 
 MUSIC_PATH = File.join(__dir__, "..", "_data", "music.yml")
 
+def cover_exists?(url_str)
+  url = URI(url_str)
+  req = Net::HTTP::Head.new(url)
+  req["User-Agent"] = "JekyllBooksCovers/1.0"
+  res = Net::HTTP.start(url.hostname, url.port, use_ssl: true) { |http| http.request(req) }
+  res.is_a?(Net::HTTPRedirection) || res.is_a?(Net::HTTPSuccess)
+end
+
 def fetch_cover(title, artist)
   query = "artist:\"#{artist}\" AND release:\"#{title}\""
   url = URI("https://musicbrainz.org/ws/2/release/?query=#{URI.encode_www_form_component(query)}&fmt=json")
@@ -18,19 +26,19 @@ def fetch_cover(title, artist)
   return nil unless res.is_a?(Net::HTTPSuccess)
 
   data = JSON.parse(res.body)
-  release = data["releases"]&.first
-  return nil unless release && release["id"]
+  releases = data["releases"] || []
 
-  mbid = release["id"]
-  cover_url = URI("https://coverartarchive.org/release/#{mbid}")
-  req2 = Net::HTTP::Get.new(cover_url)
-  req2["Accept"] = "application/json"
-  res2 = Net::HTTP.start(cover_url.hostname, cover_url.port, use_ssl: true) { |http| http.request(req2) }
-  return nil unless res2.is_a?(Net::HTTPSuccess)
-
-  cover_data = JSON.parse(res2.body)
-  img = cover_data["images"]&.find { |i| i["front"] } || cover_data["images"]&.first
-  img&.dig("image")
+  releases.first(5).each do |release|
+    mbid = release["id"]
+    rgid = release.dig("release-group", "id")
+    release_url = "https://coverartarchive.org/release/#{mbid}/front-500"
+    return release_url if cover_exists?(release_url)
+    if rgid
+      rg_url = "https://coverartarchive.org/release-group/#{rgid}/front-500"
+      return rg_url if cover_exists?(rg_url)
+    end
+  end
+  nil
 end
 
 content = File.read(MUSIC_PATH, encoding: "UTF-8")
@@ -41,8 +49,8 @@ blocks = content.split(/\n(?=- title:)/)
 new_blocks = blocks.map do |block|
   next block unless block.strip.start_with?("- title:")
 
-  cover_line = block[/cover:\s*["']?(.+?)["']?\s*$/m]
-  has_cover = cover_line && $1.to_s.strip != ""
+  cover_line = block.each_line.find { |l| l.strip.start_with?("cover:") }
+  has_cover = cover_line && cover_line.sub(/^\s*cover:\s*/, "").strip.gsub(/^["']|["']$/, "").strip != ""
   skip = has_cover && !refresh
   if skip
     block
