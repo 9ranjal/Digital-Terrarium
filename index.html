@@ -8,7 +8,7 @@ layout: default
   {% assign latest_post = nil %}
   {% for post in chronological_posts %}
     {% unless latest_post %}
-      {% unless post.tags contains 'running' or post.tags contains 'races' or post.tags contains 'cycling' or post.tags contains 'mountaineering' %}
+      {% unless post.tags contains 'running' or post.tags contains 'races' or post.tags contains 'cycling' or post.tags contains 'mountaineering' or post.exclude_recent %}
         {% assign latest_post = post %}
       {% endunless %}
     {% endunless %}
