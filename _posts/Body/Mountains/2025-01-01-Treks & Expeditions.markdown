@@ -9,6 +9,9 @@ description: "A record of Pranjal Singh's treks and mountaineering expeditions."
 
 Record of all Himalayan hikes and expeditions.
 
+## 2026
+- **Annapurna Circuit** *(Nepal)*
+
 ## 2025
 - **Pin Babha Pass** *(Himachal Pradesh, India)*
 
