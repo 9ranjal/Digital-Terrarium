@@ -4,7 +4,7 @@ title: "Tata Mumbai Marathon 2026"
 date: 2026-01-18
 tags: [running, races]
 categories: training
-description: "Pranjal Singh's race report for the Tata Mumbai Marathon 2026 — 42.195 km in 5:30:00."
+description: "Race report for the Tata Mumbai Marathon 2026 — 42.195 km in 5:30:00."
 ---
 
 ### Race Information

@@ -3,7 +3,7 @@ layout: post
 title: "Why I Built Aanae?"
 date: 2025-09-01
 tags: [AI, RAG, LLMs, data, Aanae]
-description: "Why Pranjal Singh built Aanae: from personal note-taking experiments with LLMs to a RAG-based study copilot for UPSC aspirants."
+description: "Why Aanae exists: from note-taking experiments with LLMs to a RAG-based study copilot for UPSC aspirants."
 ---
 
 **TL;DR**  

@@ -3,7 +3,7 @@ layout: post
 title: "LLM Architecture"
 date: 2025-09-29
 tags: [AI, RAG, LLMs, data, Aanae]
-description: "LLM architecture decisions in Aanae — model selection, prompt design, and how the generation layer sits on top of the retrieval pipeline."
+description: "LLM architecture in Aanae — model selection, prompt design, and the generation layer sitting on top of retrieval."
 ---
 
 TL;DR: I built a Planner → Writer → Critic pipeline around DeepSeek (via OpenRouter) where the RAG knowledge base and live web search run as parallel streams that converge at the writer prompt — with domain mandates, temporal awareness, and streaming. The whole thing runs on Render (free tier) + Vercel + Supabase.

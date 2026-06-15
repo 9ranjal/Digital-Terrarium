@@ -3,7 +3,7 @@ layout: post
 title: "Agentic Pipeline for Document Review"
 date: 2025-02-28
 tags: [Babel, Legaltech, AI, LLMs]
-description: "How Babel's agentic pipeline decomposes a term sheet document into structured clauses for automated analysis and scoring."
+description: "How Babel's agentic pipeline decomposes a term sheet into structured clauses for automated analysis and scoring."
 ---
 
 **TL;DR** -- An uploaded term sheet flows through a five-stage async pipeline that decomposes it into a scored clause graph. A copilot explains the deterministic analysis in plain language. A LangGraph state machine generates term sheets from natural-language deal descriptions. The LLM never picks the band; it explains what the engine already decided.

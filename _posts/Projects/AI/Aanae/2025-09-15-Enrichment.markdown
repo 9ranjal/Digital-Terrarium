@@ -3,7 +3,7 @@ layout: post
 title: "Enrichment"
 date: 2025-09-15
 tags: [AI, RAG, LLMs, data, Aanae]
-description: "How Aanae enriches document chunks with metadata and context before indexing — improving retrieval quality in a RAG pipeline."
+description: "Enriching document chunks with metadata and context before indexing, to improve retrieval quality in a RAG pipeline."
 ---
 
 TL;DR: 

@@ -4,7 +4,7 @@ title: "This Website"
 date: 2023-12-01
 tags: [data, experiments]
 categories: projects
-description: "How and why Pranjal Singh built this personal website — a digital terrarium for writing, projects, and training logs."
+description: "How and why this site got built — a digital terrarium for writing, projects, and training logs."
 ---
 
 **TL;DR:** A minimal, file-first website built from plain-text notes using Jekyll, reflecting a broader philosophy of owning data, avoiding proprietary lock-in, and optimising for long-term clarity, portability, and readability over tools or platforms. Incipient steps into the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).

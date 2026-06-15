@@ -5,7 +5,7 @@ date: 2026-03-01
 tags: [philosophy]
 categories: writing
 subcategory: 101-philosophy-problems
-description: "Pranjal Singh on the Hanging Man problem — the condemned prisoner who makes a single statement and goes free."
+description: "The Hanging Man problem — the condemned prisoner who makes a single statement and goes free."
 ---
 
 ## Problem Synopsis

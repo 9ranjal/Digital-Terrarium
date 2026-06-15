@@ -4,7 +4,7 @@ title: "Aanae - Experiments with RAG"
 date: 2025-08-26
 tags: [AI, RAG, Aanae]
 categories: projects
-description: "Aanae is a RAG-powered chatbot for UPSC/PSC preparation built by Pranjal Singh, using structure-aware chunking, semantic enrichment, and retrieval-augmented generation."
+description: "Aanae, a RAG-powered chatbot for UPSC/PSC prep — structure-aware chunking, semantic enrichment, and retrieval-augmented generation."
 ---
 
 

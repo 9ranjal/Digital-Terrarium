@@ -3,7 +3,7 @@ layout: post
 title: "Retrieval"
 date: 2025-09-22
 tags: [AI, RAG, LLMs, data, Aanae]
-description: "Retrieval design in Aanae — how semantic search, reranking, and context assembly work together to generate grounded answers."
+description: "Retrieval design in Aanae — semantic search, reranking, and context assembly working together to produce grounded answers."
 ---
 
 TL;DR: I went from a naive vector-only search that missed obvious keyword matches to a hybrid pipeline — dense embeddings + sparse text search + cross-encoder reranking — that retrieves 5 chunks out of 30,000 with enough precision for UPSC answers.

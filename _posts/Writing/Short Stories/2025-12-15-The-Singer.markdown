@@ -5,7 +5,7 @@ date: 2025-12-01
 tags: [short stories]
 categories: writing
 subcategory: short-stories
-description: "A short story by Pranjal Singh about a chance encounter with a singer at a fast food outlet that has lingered in memory for years."
+description: "A short story about a chance encounter with a singer at a fast-food outlet that lingered for years."
 ---
 
 It’s been a couple of years (or perhaps longer), but the Singer has remained in my thoughts. I see glimpses of his ochre robes while driving down the congested roads of my city, and at times, I hear his voice floating out to me as if from the ether.
