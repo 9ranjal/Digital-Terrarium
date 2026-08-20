@@ -32,7 +32,7 @@ Translated learnings from the above into consulting work:
 ### **Sequoia Capital (India & SEA)**  
 *March 2021 – October 2024*
 
-- **2021:** Selected *(from ~2,000 applicants)* into Sequoia Capital’s parallel analyst program for the Legal/Operations team; offered a 2-year contract. Joined immediately after the firm raised a $2.8B fund.
+- **2021:** Selected *from ~2,000 applicants* into Sequoia Capital’s parallel analyst program for the Legal/Operations team; offered a 2-year contract. Joined immediately after the firm raised a $2.8B fund.
 - **2021–2022:** Supported execution for ~100 deals across IN/SEA/MENA during ZIRP-era peak deployment velocity.
 - **2023:** Retained and converted to **full-time** as my role’s focus shifted to **portfolio management**. Completed **CFA Level I** around this time.
 - **2024:** Transitioned to **internal systems, data, and process design**. Built end-to-end deal-operations and reporting infrastructure using **Power Query, Power BI, and Python**; consolidated fragmented data into a **single source of truth** covering **100+ live deals**, enabling:
