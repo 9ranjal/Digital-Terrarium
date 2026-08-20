@@ -8,14 +8,14 @@ description: "Work history: Sequoia, AZB & Partners, Uber India, and Harvey."
 
 ## Work Experience  
 
-### **Harvey**
+### Harvey
 *June 2026-now*
 
 Joined Harvey as part of their founding GTM team in India.
 
 ---
 
-### **Independent Consulting**
+### Independent Consulting
 *Nov 2024 – June 2026*
 
 Spent time learning the LLM tech stack. Experimented with projects:
@@ -29,48 +29,48 @@ Translated learnings from the above into consulting work:
 
 ---
 
-### **Sequoia Capital (India & SEA)**  
+### Sequoia Capital (India & SEA)  
 *March 2021 – October 2024*
 
-- **2021:** Selected *from ~2,000 applicants* into Sequoia Capital’s parallel analyst program for the Legal/Operations team; offered a 2-year contract. Joined immediately after the firm raised a $2.8B fund.
-- **2021–2022:** Supported execution for ~100 deals across IN/SEA/MENA during ZIRP-era peak deployment velocity.
-- **2023:** Retained in a full-time role as my focus shifted to **portfolio management**. Completed **CFA Level I** around this time.
-- **2024:** Transitioned to **internal systems, data, and process design**. Built end-to-end deal-operations and reporting infrastructure using **Power Query, Power BI, and Python**; consolidated fragmented data into a **single source of truth** covering **100+ live deals**, enabling:
+- 2021: Selected *from ~2,000 applicants* into Sequoia Capital’s parallel analyst program for the Legal/Operations team; offered a 2-year contract. Joined immediately after the firm raised a $2.8B fund.
+- 2021–2022: Supported execution for ~100 deals across IN/SEA/MENA during ZIRP-era peak deployment velocity.
+- 2023: Retained in a full-time role as my focus shifted to portfolio management. Completed CFA Level I around this time.
+- 2024: Transitioned to internal systems, data, and process design. Built end-to-end deal-operations and reporting infrastructure using Power Query, Power BI, and Python; consolidated fragmented data into a single source of truth covering 100+ live deals, enabling:
   - real-time visibility  
   - cycle-time diagnostics  
   - bottleneck prediction for investors and internal stakeholders
-- **Late 2024:** After seeing a fund through its **full lifecycle** *(raise → deploy → manage → harvest)*, took a leap of faith and quit to continue learning about tech as a labour of love.
+- Late 2024: After seeing a fund through its full lifecycle *(raise → deploy → manage → harvest)*, took a leap of faith and quit to continue learning about tech as a labour of love.
 
 ---
 
-### **AZB & Partners**  
+### AZB & Partners  
 *November 2019 – February 2021*
 
-- A running refrain throughout law school / my early career was that I had no idea what the inside of a Tier-1 law firm looks like**. My time at AZB & Partners settled that score.
+- A running refrain throughout law school / my early career was that I had no idea what the inside of a Tier-1 law firm looks like. My time at AZB & Partners settled that score.
 - Worked in the general corporate & transactions team, with exposure to big-ticket M&A/PE transactions. Crucially, I saw how billion-dollar deals could be abstracted into nuts-and-bolts workflows.
-- A memorable detour involved helping set up a ~200 MW power plant in Rajasthan — at the time, one of the largest solar facilities in the country. To do my job well, I had to learn **how a solar facility actually operates, from how solar panels are made to supply-chain hijinks.
+- A memorable detour involved helping set up a ~200 MW power plant in Rajasthan — at the time, one of the largest solar facilities in the country. To do my job well, I had to learn how a solar facility actually operates, from how solar panels are made to supply-chain hijinks.
 
 ---
 
-### **Lexygen**  
+### Lexygen  
 *November 2017 – October 2019*
 
-- **Lexygen** is a boutique firm specialising in **venture capital transactions**. I had patient mentors who taught me how to execute deals.
+- Lexygen is a boutique firm specialising in venture capital transactions. I had patient mentors who taught me how to execute deals.
 - The firm works with leading consumer VCs, and it’s always gratifying to walk down a supermarket aisle knowing I helped with funding rounds for Epigamia and Veeba.
 
 ---
 
-### **Zehn**  
+### Zehn  
 *July 2016 – October 2017*
 
-- **Zehn** was a boutique law firm set up by WBNUJS alumni. When I joined, it functioned as a **captive unit for Uber**, handling public policy and government engagement as Uber launched operations in South India. 
-- I also worked with the **Government of Karnataka** on implementing its **Start-up Policy 2015–20**, and helped operationalise its investment platform, **Idea2PoC**.
+- Zehn was a boutique law firm set up by WBNUJS alumni. When I joined, it functioned as a captive unit for Uber, handling public policy and government engagement as Uber launched operations in South India. 
+- I also worked with the Government of Karnataka on implementing its Start-up Policy 2015–20, and helped operationalise its investment platform, Idea2PoC.
 
 ---
 
-### **College**
+### College
 
-I graduated from **WBNUJS** in 2016. Some tidbits:
+I graduated from WBNUJS in 2016. Some tidbits:
 - I was the last person on the general merit list. I'd already booked my tickeds to NLIU Bhopal when the final merit list released placing me in NUJS.
 - I was debarred from my first law school exam (*Contracts I*). We were given the option of skipping classes and meeting the teacher later to adjust our attendance. It felt weird to get attendance this way and I missed the attendance requirement by one class.
 - I signed up for the internal moots twice but couldn't bring myself to go through the rigor and dropped out each time. I enjoyed parliamentary debates however and managed to get on the University's B team.
