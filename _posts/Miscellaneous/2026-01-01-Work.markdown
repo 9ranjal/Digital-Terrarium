@@ -13,7 +13,9 @@ description: "Work history: Sequoia, AZB & Partners, Uber India, and Harvey."
 
 Joined Harvey as part of their founding GTM team in India.
 
-### **Independent Consulting**  
+---
+
+### **Independent Consulting**
 *Nov 2024 – June 2026*
 
 Spent time learning the LLM tech stack. Experimented with projects:
