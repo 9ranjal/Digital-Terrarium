@@ -17,13 +17,13 @@ Joined Harvey as part of their founding GTM team in India.
 *Nov 2024 – June 2026*
 
 Spent time learning the LLM tech stack. Experimented with projects:
- 
-# Aanae (EdTech): RAG-based study copilot, originally built for UPSC prep. Validated a thesis on SLMs for democratised education access: a Qwen 2.5 2B model cleared the UPSC Prelims 2025 pass threshold.
-# Babel (LegalTech): Negotiation engine for VC transactions, with persona modelling, document decomposition, VC ontology, and deterministic leverage scoring fed to an LLM to drive consensus outcomes.
- 
+
+1. Aanae (EdTech): RAG-based study copilot, originally built for UPSC prep. Validated a thesis on SLMs for democratised education access: a Qwen 2.5 2B model cleared the UPSC Prelims 2025 pass threshold.
+2. Babel (LegalTech): Negotiation engine for VC transactions, with persona modelling, document decomposition, VC ontology, and deterministic leverage scoring fed to an LLM to drive consensus outcomes.
+
 Translated learnings from the above into consulting work:
-# Worked with a private credit start-up to finesse its RAG pipeline.
-# Designed workflows for an AI-native law firm looking to automate transactions.
+1. Worked with a private credit start-up to finesse its RAG pipeline.
+2. Designed workflows for an AI-native law firm looking to automate transactions.
 
 ---
 
