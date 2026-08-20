@@ -72,16 +72,18 @@ layout: default
       var row = document.createElement('div');
       row.className = 'toc-h2-row';
 
-      var num = document.createElement('span');
-      num.className = 'toc-num';
-      num.textContent = h2Index + '.';
+      if (h2Count > 1) {
+        var num = document.createElement('span');
+        num.className = 'toc-num';
+        num.textContent = h2Index + '.';
+        row.appendChild(num);
+      }
 
       var a = document.createElement('a');
       a.href = '#' + id;
       a.textContent = stripLeadingNumber(heading.textContent.trim());
       a.className = 'toc-link';
 
-      row.appendChild(num);
       row.appendChild(a);
       li.appendChild(row);
       ul.appendChild(li);
