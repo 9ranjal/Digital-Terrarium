@@ -3,6 +3,22 @@
 
 # ——— 2026 ———
 
+- title: "Justice League"
+  year: 2001
+  rating: "5/5"
+  cover: "https://image.tmdb.org/t/p/w500/caIAQIoM9NLZofT8fz8t47W1gYe.jpg"
+  year_group: "2026"
+  review: >
+    Classic.
+
+- title: "Justice League Unlimited"
+  year: 2004
+  rating: "5/5"
+  cover: "https://image.tmdb.org/t/p/w500/vRRvCUREeqqnp3hHdqep83eQjdP.jpg"
+  year_group: "2026"
+  review: >
+    Classic.
+
 - title: "Ninja Scroll"
   year: 1993
   rating: "4.5/5"
