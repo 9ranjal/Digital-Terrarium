@@ -34,12 +34,7 @@ layout: default
         </div>
         <div class="book-info">
           <h3 class="book-title">{{ book.title | escape }}</h3>
-          <p class="book-meta">
-            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
-          </p>
-          {% if book.rating and book.rating != "" %}
-          <p class="book-rating">★ {{ book.rating }}</p>
-          {% endif %}
+          <p class="book-meta">{{ book.author | escape }}</p>
           {% if book.status %}
           <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
           {% endif %}
@@ -72,12 +67,7 @@ layout: default
         </div>
         <div class="book-info">
           <h3 class="book-title">{{ book.title | escape }}</h3>
-          <p class="book-meta">
-            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
-          </p>
-          {% if book.rating and book.rating != "" %}
-          <p class="book-rating">★ {{ book.rating }}</p>
-          {% endif %}
+          <p class="book-meta">{{ book.author | escape }}</p>
           {% if book.status %}
           <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
           {% endif %}
@@ -110,12 +100,7 @@ layout: default
         </div>
         <div class="book-info">
           <h3 class="book-title">{{ book.title | escape }}</h3>
-          <p class="book-meta">
-            {{ book.author | escape }}{% if book.year %} · {{ book.year }}{% endif %}
-          </p>
-          {% if book.rating and book.rating != "" %}
-          <p class="book-rating">★ {{ book.rating }}</p>
-          {% endif %}
+          <p class="book-meta">{{ book.author | escape }}</p>
           {% if book.status %}
           <span class="book-status book-status-{{ book.status | slugify }}">{{ book.status }}</span>
           {% endif %}

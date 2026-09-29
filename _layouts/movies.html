@@ -30,10 +30,6 @@ layout: default
           </div>
           <div class="book-info">
             <h3 class="book-title">{{ movie.title | escape }}</h3>
-            <p class="book-meta">{% if movie.year %}{{ movie.year }}{% endif %}</p>
-            {% if movie.rating and movie.rating != "" %}
-            <p class="book-rating">{{ movie.rating }}</p>
-            {% endif %}
           </div>
         </article>
         {% endfor %}

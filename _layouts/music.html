@@ -31,10 +31,7 @@ layout: default
           </div>
           <div class="book-info">
             <h3 class="book-title">{{ album.title | escape }}</h3>
-            <p class="book-meta">{{ album.artist | escape }}{% if album.year %} · {{ album.year }}{% endif %}</p>
-            {% if album.rating and album.rating != "" %}
-            <p class="book-rating">★ {{ album.rating }}</p>
-            {% endif %}
+            <p class="book-meta">{{ album.artist | escape }}</p>
           </div>
         </article>
         {% endfor %}
