@@ -2,7 +2,6 @@
 layout: default
 title: Writing
 permalink: /writing/
-description: "Essays, short stories, and other creative writing."
 ---
 
 <div class="page">

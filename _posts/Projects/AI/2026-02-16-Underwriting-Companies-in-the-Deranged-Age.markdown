@@ -4,7 +4,6 @@ title: "Underwriting Companies in the Deranged Age"
 date: 2026-02-16
 tags: [AI]
 categories: projects
-description: "A diligence framework for AI-enabled companies — training data, model dependency, token economics, and IP after SaaS."
 ---
 
 *How CFOs and General Counsels should evaluate AI-enabled companies when models commoditise software*

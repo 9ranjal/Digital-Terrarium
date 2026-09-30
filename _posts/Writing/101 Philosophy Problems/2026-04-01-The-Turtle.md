@@ -5,7 +5,6 @@ date: 2026-04-01
 tags: [philosophy]
 categories: writing
 subcategory: 101-philosophy-problems
-description: "The Turtle problem — a puzzle about fairness, bargaining, and what it means to keep a promise."
 ---
 
 ## Problem Synopsis

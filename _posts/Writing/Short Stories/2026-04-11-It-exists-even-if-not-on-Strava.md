@@ -5,7 +5,6 @@ date: 2026-04-11
 tags: [essays]
 categories: writing
 subcategory: short-stories
-description: "An essay on running, presence, and why a race exists independent of whether it's tracked."
 ---
 
 The finish line is in your sight. 

@@ -4,7 +4,6 @@ title: "Basic Mountaineering Course @ NIMAS"
 date: 2023-08-01
 tags: [mountaineering]
 categories: training
-description: "Journal from the Basic Mountaineering Course at NIMAS — ennui, cold sleeping bags, and the mountains."
 ---
 
 

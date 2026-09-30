@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-description: "Pranjal Singh is a lawyer-technologist working on product and GTM for AI companies. Former Sequoia Capital. Builder of Babel and Aanae."
 ---
 
 Welcome to my digital terrarium! I was inspired by [Kepano's](https://stephango.com/) vision of a digital space for the 'wilderness of my mind'.

@@ -3,7 +3,6 @@ layout: post
 title: "Preparing your Data"
 date: 2025-09-01
 tags: [AI, RAG, LLMs, data, Aanae]
-description: "Preparing and structuring raw notes for a RAG pipeline — cleaning, formatting, and ingestion decisions."
 ---
 
 **TL;DR:** Before you can do RAG, you need your knowledge in a format machines can read. My notes lived in OneNote and PDFs—locked in, unstructured. I got everything out (export → HTML → Markdown), cleaned and normalized it, and ended up with plain-text Markdown and spreadsheets that the rest of the pipeline could actually use.

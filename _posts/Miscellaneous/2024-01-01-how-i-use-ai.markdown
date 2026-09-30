@@ -3,7 +3,6 @@ layout: post
 title: "How I Use AI"
 tags: [Me]
 date: 2024-01-01
-description: "Where AI helps and where it doesn't — the principles behind using LLMs in writing and coding."
 ---
 
 ## Where I Use AI

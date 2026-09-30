@@ -3,7 +3,6 @@ layout: post
 title: "Work"
 date: 2025-12-31
 tags: [Me]
-description: "Work history: Sequoia, AZB & Partners, Uber India, and Harvey."
 ---
 
 ## Work Experience  

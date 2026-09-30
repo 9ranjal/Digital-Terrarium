@@ -4,7 +4,6 @@ title: "HSR Spirit 10k"
 date: 2026-04-19
 tags: [running, races]
 categories: training
-description: "Race report for the HSR Spirit 10K in Bangalore — 10 km in 1:03:24."
 ---
 
 ### Race Information

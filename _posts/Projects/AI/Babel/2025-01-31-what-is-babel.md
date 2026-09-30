@@ -4,7 +4,6 @@ title: "Babel - Consensus as a Service"
 date: 2025-01-31
 tags: [Babel, Legaltech]
 categories: projects
-description: "Babel, a copilot for VC negotiations: it finds the Zone of Possible Agreement and scores every term-sheet clause by who holds leverage."
 ---
 
 Babel is a copilot for VC negotiations. It finds the **Zone of Possible Agreement** — the overlap between what a founder will accept and what an investor will offer — and uses it to score every clause in a term sheet against who has leverage in the deal.

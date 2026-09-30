@@ -4,7 +4,6 @@ title: 101 Philosophy Problems
 parent_category: writing
 subcategory: 101-philosophy-problems
 permalink: /writing/101-philosophy-problems/
-description: "Exploring philosophy through problems."
 ---
 
 I've tried, over several years, to study philosophy in an unstructured way — listening to Stephen West's excellent podcast [_Philosophize This!_](https://www.philosophizethis.org/), making intermittent attempts at Bertrand Russell's _The Problems of Philosophy_, and picking up various other books that eventually left my eyes heavy and my head spinning. While this has been educational, I wouldn't necessarily deem it fulfilling.

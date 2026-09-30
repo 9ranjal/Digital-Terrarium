@@ -5,7 +5,6 @@ date: 2026-03-01
 tags: [philosophy]
 categories: writing
 subcategory: 101-philosophy-problems
-description: "The Hanging Man problem — the condemned prisoner who makes a single statement and goes free."
 ---
 
 ## Problem Synopsis
